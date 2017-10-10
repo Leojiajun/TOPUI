@@ -1,37 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22553" started-at="2017-10-10T06:39:50Z" finished-at="2017-10-10T06:40:13Z">
+  <suite name="Default suite" duration-ms="21108" started-at="2017-10-10T09:56:55Z" finished-at="2017-10-10T09:57:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22553" started-at="2017-10-10T06:39:50Z" finished-at="2017-10-10T06:40:13Z">
-      <class name="so.sao.integration.basicData.Distributors">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="conect" is-config="true" duration-ms="194" started-at="2017-10-10T14:39:50Z" finished-at="2017-10-10T14:39:51Z">
+    <test name="Default test" duration-ms="21108" started-at="2017-10-10T09:56:55Z" finished-at="2017-10-10T09:57:16Z">
+      <class name="so.sao.integration.platformService.Users">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Users@29774679]" name="conect" is-config="true" duration-ms="196" started-at="2017-10-10T17:56:55Z" finished-at="2017-10-10T17:56:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="loadDriver" is-config="true" duration-ms="3722" started-at="2017-10-10T14:39:51Z" finished-at="2017-10-10T14:39:54Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Users@29774679]" name="loadDriver" is-config="true" duration-ms="3673" started-at="2017-10-10T17:56:55Z" finished-at="2017-10-10T17:56:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="login" is-config="true" duration-ms="4866" started-at="2017-10-10T14:39:54Z" finished-at="2017-10-10T14:39:59Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Users@29774679]" name="login" is-config="true" duration-ms="4474" started-at="2017-10-10T17:56:58Z" finished-at="2017-10-10T17:57:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newLeader()[pri:2, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="newLeader" duration-ms="10415" started-at="2017-10-10T14:39:59Z" finished-at="2017-10-10T14:40:10Z">
+        <test-method status="FAIL" signature="newUser()[pri:2, instance:so.sao.integration.platformService.Users@29774679]" name="newUser" duration-ms="12635" started-at="2017-10-10T17:57:03Z" finished-at="2017-10-10T17:57:16Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at so.sao.integration.platformService.Users.newUser(Users.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newLeader -->
-        <test-method status="PASS" signature="delLeader()[pri:3, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="delLeader" duration-ms="3344" started-at="2017-10-10T14:40:10Z" finished-at="2017-10-10T14:40:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delLeader -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="closedb" is-config="true" duration-ms="1" started-at="2017-10-10T14:40:13Z" finished-at="2017-10-10T14:40:13Z">
+        </test-method> <!-- newUser -->
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Users@29774679]" name="closedb" is-config="true" duration-ms="1" started-at="2017-10-10T17:57:16Z" finished-at="2017-10-10T17:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.Distributors -->
+      </class> <!-- so.sao.integration.platformService.Users -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
