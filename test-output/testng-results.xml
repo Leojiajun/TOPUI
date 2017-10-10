@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22553" started-at="2017-10-10T06:39:50Z" finished-at="2017-10-10T06:40:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22553" started-at="2017-10-10T06:39:50Z" finished-at="2017-10-10T06:40:13Z">
+      <class name="so.sao.integration.basicData.Distributors">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="conect" is-config="true" duration-ms="194" started-at="2017-10-10T14:39:50Z" finished-at="2017-10-10T14:39:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conect -->
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="loadDriver" is-config="true" duration-ms="3722" started-at="2017-10-10T14:39:51Z" finished-at="2017-10-10T14:39:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadDriver -->
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="login" is-config="true" duration-ms="4866" started-at="2017-10-10T14:39:54Z" finished-at="2017-10-10T14:39:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="newLeader()[pri:2, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="newLeader" duration-ms="10415" started-at="2017-10-10T14:39:59Z" finished-at="2017-10-10T14:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newLeader -->
+        <test-method status="PASS" signature="delLeader()[pri:3, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="delLeader" duration-ms="3344" started-at="2017-10-10T14:40:10Z" finished-at="2017-10-10T14:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delLeader -->
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="closedb" is-config="true" duration-ms="1" started-at="2017-10-10T14:40:13Z" finished-at="2017-10-10T14:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedb -->
+      </class> <!-- so.sao.integration.basicData.Distributors -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
