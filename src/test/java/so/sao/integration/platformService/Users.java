@@ -38,8 +38,37 @@ public class Users extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("保存成功"));
 	}
 	
-	//@Test(priority=3)//修改用户
-	public void alterUser(){
-		
+	@Test(priority=3)//修改用户
+	public void alterUser() throws SQLException, InterruptedException{
+		Tools.button("useralter", "users", driver);
+		Thread.sleep(2000);
+		Tools.input("fullname", "users", "测试b", driver);
+		Tools.input("mobile", "users", "13887654321", driver);
+		Thread.sleep(2000);
+		Tools.button("alterusersurebtn", "users", driver);
+		Thread.sleep(1000);
+		Assert.assertTrue(driver.getPageSource().contains("修改成功"));	
 	}
+	
+	@Test(priority=4)//重置用户
+	public void resetUser() throws SQLException, InterruptedException{
+		Tools.button("userreset", "users", driver);
+		Thread.sleep(2000);
+		Tools.input("resetloginpassword", "users", "ab222222", driver);
+		Tools.input("resetloginpasswordagain", "users", "ab222222", driver);
+		Thread.sleep(2000);
+		Tools.button("resetusersurebtn", "users", driver);
+		Thread.sleep(1000);
+	}
+	@Test(priority=5)//停用用户
+	public void stopUser() throws SQLException, InterruptedException{
+		Tools.button("userstop", "users", driver);
+		Thread.sleep(2000);
+		Tools.button("stopusersurebtn", "users", driver);
+		Thread.sleep(2000);
+		String teststop=Tools.getelement("teststop", "users", driver).getText();
+		Assert.assertTrue(teststop.contains("启用"));
+	}
+	
+
 }

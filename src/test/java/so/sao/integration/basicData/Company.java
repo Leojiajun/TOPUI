@@ -2,6 +2,7 @@ package so.sao.integration.basicData;
 
 import java.sql.SQLException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -27,9 +28,13 @@ public class Company extends BaseTest{
 		Tools.input("productnum", "company", "1", driver);
 		Tools.input("usernum", "company", "1", driver);
 		Tools.input("terminalnum", "company", "2", driver);
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
 		Tools.button("keepcompany", "company", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("保存成功"));
+	}	
+	@Test(priority=3)//审核启用企业
+	public void reviewAndawakenCompany() throws SQLException, InterruptedException{	
 		Tools.button("review", "company", driver);
 		Thread.sleep(1000);
 		Tools.button("doadd", "company", driver);
@@ -39,8 +44,22 @@ public class Company extends BaseTest{
 		Tools.button("awakencompanysure", "company", driver);
 		Thread.sleep(1000);
 	}
+	@Test(priority=4)//修改一个企业
+	public void alterCompany() throws SQLException, InterruptedException{
+		Tools.button("altercompany", "company", driver);
+		Thread.sleep(2000);
+		Tools.input("contactname", "company", "Acompanycontact", driver);
+		Tools.input("contactphone", "company", "13822225555", driver);
+		Thread.sleep(1000);
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
+		Thread.sleep(2000);
+		Tools.button("altercompanysurebtn", "company", driver);
+		Thread.sleep(1000);
+		Assert.assertTrue(driver.getPageSource().contains("修改成功"));
+	}
 	
-	@Test(priority=3)//删除一个企业
+	
+	@Test(priority=5)//删除一个企业
 	public void delCompany() throws SQLException, InterruptedException{
 		driver.navigate().refresh();
 		Tools.button("basedata", "company", driver);

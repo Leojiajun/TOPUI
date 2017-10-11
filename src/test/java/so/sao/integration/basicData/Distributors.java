@@ -3,6 +3,7 @@ package so.sao.integration.basicData;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,7 @@ public class Distributors extends BaseTest{
 		Tools.input("leaderphoneNum", "distributors", "13812345678", driver);
 		Thread.sleep(2000);
 		Tools.button("choiceArea", "distributors", driver);
+		Thread.sleep(2000);
 		Tools.button("beijing", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("addleadersurebtn", "distributors", driver);
@@ -31,7 +33,21 @@ public class Distributors extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("添加成功"));
 	}
 	
-	@Test(priority=3)//删除一个经销商
+	@Test(priority=3)//修改经销商
+	public void alterLeader() throws SQLException, InterruptedException{
+		Tools.button("alterlleader", "distributors", driver);
+		Thread.sleep(2000);
+		Tools.input("leadercontact", "distributors", "contactA", driver);
+		Thread.sleep(2000);
+		Tools.button("tianjin", "distributors", driver);
+		Thread.sleep(2000);
+		Tools.button("alterleadersurebtn", "distributors", driver);
+		Thread.sleep(1000);
+		Assert.assertTrue(driver.getPageSource().contains("修改成功"));
+	}
+	
+	
+	@Test(priority=4)//删除一个经销商
 	public void delLeader() throws SQLException, InterruptedException{
 		Tools.button("deleteleader", "distributors", driver);
 		Thread.sleep(2000);
@@ -40,7 +56,7 @@ public class Distributors extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("成功"));	
 	}
 	
-	@Test(priority=4)//导入一批经销商
+	@Test(priority=5)//导入一批经销商
 	public void loadin() throws SQLException, InterruptedException, IOException{
 		Tools.button("leaderloadinbtn", "distributors", driver);
 		Thread.sleep(2000);
