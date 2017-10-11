@@ -56,7 +56,7 @@ public class Distributors extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("成功"));	
 	}
 	
-	@Test(priority=5)//导入一批经销商
+	//@Test(priority=5)//导入一批经销商
 	public void loadin() throws SQLException, InterruptedException, IOException{
 		Tools.button("leaderloadinbtn", "distributors", driver);
 		Thread.sleep(2000);

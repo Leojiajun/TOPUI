@@ -15,6 +15,7 @@ public class Products extends BaseTest {
 	private String test1="PC"+Tools.getRandomString(6);
 	@Test(priority=2)//新建一个产品
 	public void newProduct() throws SQLException, InterruptedException, IOException{
+		driver.navigate().refresh();
 		Tools.button("basedata", "products", driver);
 		Thread.sleep(2000);
 		Tools.button("productmanage", "products", driver);

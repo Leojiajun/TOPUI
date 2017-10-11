@@ -24,7 +24,7 @@ public class SalesRegion extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
 	}
-	//@Test(priority=3)//删除销售区域
+	@Test(priority=3)//删除销售区域
 	public void delSalesRegion() throws SQLException, InterruptedException{
 		Tools.button("delsalesregion", "salesregion", driver);
 		Thread.sleep(2000);

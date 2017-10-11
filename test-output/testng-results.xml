@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69479" started-at="2017-10-11T06:45:28Z" finished-at="2017-10-11T06:46:38Z">
+  <suite name="Default suite" duration-ms="17803" started-at="2017-10-11T07:21:57Z" finished-at="2017-10-11T07:22:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69479" started-at="2017-10-11T06:45:28Z" finished-at="2017-10-11T06:46:38Z">
-      <class name="so.sao.integration.basicData.Distributors">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="conect" is-config="true" duration-ms="201" started-at="2017-10-11T14:45:28Z" finished-at="2017-10-11T14:45:28Z">
+    <test name="Default test" duration-ms="17803" started-at="2017-10-11T07:21:57Z" finished-at="2017-10-11T07:22:15Z">
+      <class name="so.sao.integration.basicData.DataDictionary">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="conect" is-config="true" duration-ms="187" started-at="2017-10-11T15:21:57Z" finished-at="2017-10-11T15:21:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="loadDriver" is-config="true" duration-ms="3180" started-at="2017-10-11T14:45:28Z" finished-at="2017-10-11T14:45:32Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="loadDriver" is-config="true" duration-ms="2420" started-at="2017-10-11T15:21:58Z" finished-at="2017-10-11T15:22:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="login" is-config="true" duration-ms="4674" started-at="2017-10-11T14:45:32Z" finished-at="2017-10-11T14:45:36Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="login" is-config="true" duration-ms="5973" started-at="2017-10-11T15:22:00Z" finished-at="2017-10-11T15:22:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newLeader()[pri:2, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="newLeader" duration-ms="12361" started-at="2017-10-11T14:45:36Z" finished-at="2017-10-11T14:45:49Z">
+        <test-method status="PASS" signature="newDataDictionary()[pri:2, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="newDataDictionary" duration-ms="5987" started-at="2017-10-11T15:22:06Z" finished-at="2017-10-11T15:22:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newLeader -->
-        <test-method status="PASS" signature="alterLeader()[pri:3, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="alterLeader" duration-ms="7538" started-at="2017-10-11T14:45:49Z" finished-at="2017-10-11T14:45:56Z">
+        </test-method> <!-- newDataDictionary -->
+        <test-method status="PASS" signature="delDataDictionary()[pri:3, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="delDataDictionary" duration-ms="3222" started-at="2017-10-11T15:22:12Z" finished-at="2017-10-11T15:22:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alterLeader -->
-        <test-method status="PASS" signature="delLeader()[pri:4, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="delLeader" duration-ms="3310" started-at="2017-10-11T14:45:56Z" finished-at="2017-10-11T14:45:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delLeader -->
-        <test-method status="PASS" signature="loadin()[pri:5, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="loadin" duration-ms="38196" started-at="2017-10-11T14:45:59Z" finished-at="2017-10-11T14:46:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadin -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Distributors@3ffc5af1]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-11T14:46:38Z" finished-at="2017-10-11T14:46:38Z">
+        </test-method> <!-- delDataDictionary -->
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.DataDictionary@3ffc5af1]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-11T15:22:15Z" finished-at="2017-10-11T15:22:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.Distributors -->
+      </class> <!-- so.sao.integration.basicData.DataDictionary -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
