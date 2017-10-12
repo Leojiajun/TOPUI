@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SalesRegion" >
+  <test name="Test1">
+    <classes >
+      <class name="so.sao.integration.basicData.SalesRegion"/>
+     </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

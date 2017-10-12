@@ -3,6 +3,7 @@ package so.sao.integration.basicData;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -27,6 +28,10 @@ public class Products extends BaseTest {
 		Tools.input("saleprice", "products", "10", driver);
 		Tools.button("wine", "products", driver);
 		Thread.sleep(2000);
+		driver.switchTo().frame("ueditor_0");//切换到富文本
+		driver.findElement(By.tagName("body")).sendKeys("这是产品介绍");//在body中输入内容
+		Thread.sleep(1000);
+		driver.switchTo().defaultContent();//切回来
 		Tools.button("preserve", "products", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
@@ -71,13 +76,13 @@ public class Products extends BaseTest {
 		Assert.assertEquals(test1!=test2, true);	
 	}
 	
-	//@Test(priority=6)//导入产品
+	@Test(priority=6)//导入产品
 	public void leadinProduct() throws SQLException, InterruptedException, IOException{
 		Tools.button("leadin", "products", driver);
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "products", driver);
 		Thread.sleep(2000);
-		Runtime.getRuntime().exec("D:/uploadrun/product.exe");
+		Runtime.getRuntime().exec("D:/uploadexe/product.exe");
 		Thread.sleep(20000);
 		Tools.button("uploadsurebtn", "products", driver);
 		Thread.sleep(5000);

@@ -13,6 +13,72 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <build> 
+     <plugins>
+      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<skip>true</skip>
+					<!-- 每次执行测试的时候新建一个jvm -->
+					<forkMode>once</forkMode> 
+					<!-- 明确指定一下JVM的file.encoding --> 
+                    <argLine>-Dfile.encoding=UTF-8</argLine> 	
+				</configuration>
+				<executions>
+					<execution>
+						<id>run-integration-test</id>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<skip>false</skip>
+							<includes>
+								<include>**/integration/**/*.java</include>
+							</includes>
+							<!--<suiteXmlFiles> <suiteXmlFile>testng.xml</suiteXmlFile> </suiteXmlFiles> -->
+						</configuration>
+					</execution>
+					<execution>
+						<id>run-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<skip>false</skip>
+							<includes>
+								<include>**/unit/**/*.java</include>
+							</includes>
+							<suiteXmlFiles> 						
+							<suiteXmlFile>src/test/resources/suite/company.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/datadictionary.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/distributors.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/factories.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/products.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/salesregion.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/roles.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/users.xml</suiteXmlFile>		
+							</suiteXmlFiles>
+							<properties>
+                              <property>
+                                <name>usedefaultlisteners</name>
+                                <value>false</value>
+                              </property>
+                              <property>
+                                <name>listener</name>
+                                <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                              </property>
+                           </properties>
+						</configuration>
+					</execution>
+				</executions>
+		</plugin>
+     </plugins>
+  </build>
 
   <dependencies>
     <dependency>

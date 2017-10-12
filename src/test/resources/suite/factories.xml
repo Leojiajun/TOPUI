@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Factories" >
+  <test name="Test1">
+    <classes >
+      <class name="so.sao.integration.basicData.Factories"/>
+     </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

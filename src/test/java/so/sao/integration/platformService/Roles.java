@@ -26,7 +26,24 @@ public class Roles extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("创建成功"));
 	}
 	
-	@Test(priority=3)//删除角色
+	@Test(priority=3)//修改角色
+	public void alterRole() throws SQLException, InterruptedException{
+		String test="备注"+Tools.getRandomString(5);
+		Thread.sleep(2000);
+		Tools.button("alterrole", "roles", driver);
+		Tools.waitForElementPresent("choiceplatform", "roles", driver);
+		Tools.input("comment", "roles", test, driver);
+		Thread.sleep(2000);
+		Tools.button("choiceplatform", "roles", driver);
+		System.out.println("*****jjj");
+		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
+		Tools.button("alterrolesurebtn", "roles", driver);
+		Tools.waitForElementPresent("addrole", "roles", driver);
+		Assert.assertTrue(driver.getPageSource().contains(test));
+	}
+	
+	
+	@Test(priority=4)//删除角色
 	public void delRole() throws SQLException, InterruptedException{
 		Tools.button("delrole", "roles", driver);
 		Thread.sleep(2000);

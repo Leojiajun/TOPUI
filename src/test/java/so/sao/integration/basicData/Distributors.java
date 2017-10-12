@@ -61,7 +61,7 @@ public class Distributors extends BaseTest{
 		Tools.button("leaderloadinbtn", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "distributors", driver);
-		Runtime.getRuntime().exec("D:/uploadrun/franchiser.exe");
+		Runtime.getRuntime().exec("D:/uploadexe/franchiser.exe");
 		Thread.sleep(30000);
 		Tools.button("uploadsurebtn", "distributors", driver);
 		Thread.sleep(5000);
