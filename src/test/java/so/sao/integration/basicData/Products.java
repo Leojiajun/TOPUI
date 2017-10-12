@@ -36,7 +36,22 @@ public class Products extends BaseTest {
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
 	}
-	@Test(priority=3)//修改一个产品
+	
+	@Test(priority=3)//搜索产品
+	public void searchProduct() throws InterruptedException, SQLException{
+		driver.navigate().refresh();
+		Thread.sleep(2000);
+		Tools.input("searchinput", "products", test1, driver);
+		Tools.button("search", "products", driver);
+		Thread.sleep(2000);
+		String strNum = Tools.getelement("producttotal", "products", driver).getText().replaceAll("\\s", "");
+		int pNum = Integer.valueOf(strNum.substring(1,2));
+		Assert.assertEquals(pNum==1, true);
+	}
+	
+	
+	
+	@Test(priority=4)//修改产品
 	public void alterProduct() throws SQLException, InterruptedException{
 		Tools.button("productalter", "products", driver);
 		Thread.sleep(2000);
@@ -48,7 +63,7 @@ public class Products extends BaseTest {
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
 	}
-	@Test(priority=4)//禁用和启用产品
+	@Test(priority=5)//禁用和启用产品
 	public void stopAndawakenProduct() throws SQLException, InterruptedException{
 		Tools.button("stopandawaken", "products", driver);
 		Tools.waitForElementPresent("stopandawakensurebtn", "products", driver);
@@ -64,7 +79,7 @@ public class Products extends BaseTest {
 		Assert.assertTrue(test2.contains("禁用"));
 	} 
 	
-	@Test(priority=5)//删除一个产品
+	@Test(priority=6)//删除一个产品
 	public void delProduct() throws SQLException, InterruptedException{
 		Tools.button("Pdelete", "products", driver);
 		Thread.sleep(2000);
@@ -76,7 +91,7 @@ public class Products extends BaseTest {
 		Assert.assertEquals(test1!=test2, true);	
 	}
 	
-	@Test(priority=6)//导入产品
+	@Test(priority=7)//导入产品
 	public void leadinProduct() throws SQLException, InterruptedException, IOException{
 		Tools.button("leadin", "products", driver);
 		Thread.sleep(2000);

@@ -33,7 +33,7 @@ public class SalesRegion extends BaseTest{
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
 	}
 	
-	//@Test(priority=4)//导入销售区域
+	@Test(priority=4)//导入销售区域
 	public void leadinSalesRegion() throws SQLException, InterruptedException, IOException{
 		Tools.button("salesarealeadin", "salesregion", driver);
 		Thread.sleep(2000);

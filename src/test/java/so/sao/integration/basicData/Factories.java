@@ -27,17 +27,38 @@ public class Factories extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));
 	}
-	@Test(priority=3)//修改工厂
+	
+	
+	@Test(priority=3)//搜索工厂
+	public void searchFactory() throws InterruptedException, SQLException{
+		driver.navigate().refresh();
+		Thread.sleep(2000);
+		Tools.input("searchinput", "factories", test1, driver);
+		Tools.button("search", "factories", driver);
+		Thread.sleep(2000);
+		String strNum = Tools.getelement("factorytotal", "factories", driver).getText().replaceAll("\\s", "");
+		int pNum = Integer.valueOf(strNum.substring(1,2));
+		Assert.assertEquals(pNum==1, true);
+	} 
+	
+	
+	@Test(priority=4)//修改工厂
 	public void alterFactory() throws SQLException, InterruptedException{
+		String test = "备注"+Tools.getRandomString(5);
+		Thread.sleep(2000);
 		Tools.button("alterfactory", "factories", driver);
 		Thread.sleep(2000);
 		Tools.input("factoryaddress", "factories", "北京", driver);
 		Thread.sleep(2000);
+		Tools.input("comment", "factories", test, driver);
+		Thread.sleep(2000);
 		Tools.button("alterfactorysurebtn", "factories", driver);
-		Thread.sleep(1000);
-		Assert.assertTrue(driver.getPageSource().contains("成功"));
+		Thread.sleep(3000);
+		Assert.assertTrue(driver.getPageSource().contains(test));
 	}
-	@Test(priority=4)//禁用和启用工厂
+	
+	
+	@Test(priority=5)//禁用和启用工厂
 	public void stopAndawakenFactory() throws SQLException, InterruptedException{
 		Tools.button("stopandawaken", "factories", driver);
 		Tools.waitForElementPresent("stopandawakensurebtn", "factories", driver);
@@ -54,14 +75,13 @@ public class Factories extends BaseTest{
 	} 
 	
 	
-	@Test(priority=5)//删除一个工厂
+	@Test(priority=6)//删除一个工厂
 	public void delFactory() throws SQLException, InterruptedException{
 		Tools.button("delfactory", "factories", driver);
 		Thread.sleep(2000);
 		Tools.button("delfactorysurebtn", "factories", driver);
 		Thread.sleep(2000);
 		String test2=Tools.getelement("testelement", "factories", driver).getText();
-		Assert.assertEquals(test1!=test2, true);
-		
+		Assert.assertEquals(test1!=test2, true);		
 	}
 }
