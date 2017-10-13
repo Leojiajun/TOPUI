@@ -1,5 +1,6 @@
 package so.sao.integration.basicData;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,7 +13,7 @@ import so.sao.integration.util.Tools;
 public class Company extends BaseTest{
 	private String test1=Tools.getRandomString(7);
 	@Test(priority=2)//新建企业并审核启用
-	public void newCompany() throws SQLException, InterruptedException{
+	public void newCompany() throws SQLException, InterruptedException, IOException{
 		Tools.button("basedata", "company", driver);
 		Thread.sleep(2000);
 		Tools.button("companymanage", "company", driver);
@@ -29,6 +30,11 @@ public class Company extends BaseTest{
 		Tools.input("usernum", "company", "1", driver);
 		Tools.input("terminalnum", "company", "2", driver);
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
+		Thread.sleep(2000);
+		Tools.button("cardpicture", "company", driver);
+		Thread.sleep(2000);
+		Runtime.getRuntime().exec("D:/uploadexe/companypicture.exe");
+		Thread.sleep(20000);
 		Tools.button("keepcompany", "company", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("保存成功"));

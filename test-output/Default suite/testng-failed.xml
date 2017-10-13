@@ -6,10 +6,15 @@
       <class name="so.sao.integration.basicData.Products">
         <methods>
           <include name="conect"/>
+          <include name="closebrowser"/>
+          <include name="alterProduct"/>
           <include name="login"/>
           <include name="searchProduct"/>
+          <include name="delProduct"/>
           <include name="newProduct"/>
           <include name="loadDriver"/>
+          <include name="stopAndawakenProduct"/>
+          <include name="closedb"/>
         </methods>
       </class> <!-- so.sao.integration.basicData.Products -->
     </classes>

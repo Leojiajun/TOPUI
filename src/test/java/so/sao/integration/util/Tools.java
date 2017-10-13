@@ -52,7 +52,7 @@ public class Tools {
 		button.click();
 		  }
 	
-	//文本框输入内容
+	//按钮点击
 	public static void button(String keyname,String tablename,WebDriver driver) throws SQLException {
 		try{
 			button(By.xpath(getdbData(keyname, tablename)),driver);
