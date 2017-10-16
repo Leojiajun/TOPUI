@@ -1,53 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67041" started-at="2017-10-13T08:21:05Z" finished-at="2017-10-13T08:22:12Z">
+  <suite name="Default suite" duration-ms="32137" started-at="2017-10-16T09:56:43Z" finished-at="2017-10-16T09:57:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67041" started-at="2017-10-13T08:21:05Z" finished-at="2017-10-13T08:22:12Z">
-      <class name="so.sao.integration.basicData.Products">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Products@6a4f787b]" name="conect" is-config="true" duration-ms="194" started-at="2017-10-13T16:21:05Z" finished-at="2017-10-13T16:21:06Z">
+    <test name="Default test" duration-ms="32137" started-at="2017-10-16T09:56:43Z" finished-at="2017-10-16T09:57:15Z">
+      <class name="so.sao.integration.platformService.Roles">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="conect" is-config="true" duration-ms="181" started-at="2017-10-16T17:56:43Z" finished-at="2017-10-16T17:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Products@6a4f787b]" name="loadDriver" is-config="true" duration-ms="3383" started-at="2017-10-13T16:21:06Z" finished-at="2017-10-13T16:21:09Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="loadDriver" is-config="true" duration-ms="4266" started-at="2017-10-16T17:56:43Z" finished-at="2017-10-16T17:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Products@6a4f787b]" name="login" is-config="true" duration-ms="5374" started-at="2017-10-13T16:21:09Z" finished-at="2017-10-13T16:21:14Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="login" is-config="true" duration-ms="5221" started-at="2017-10-16T17:56:48Z" finished-at="2017-10-16T17:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newProduct()[pri:2, instance:so.sao.integration.basicData.Products@6a4f787b]" name="newProduct" duration-ms="29369" started-at="2017-10-13T16:21:14Z" finished-at="2017-10-13T16:21:44Z">
+        <test-method status="PASS" signature="newRole()[pri:2, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="newRole" duration-ms="7860" started-at="2017-10-16T17:56:53Z" finished-at="2017-10-16T17:57:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newProduct -->
-        <test-method status="PASS" signature="searchProduct()[pri:3, instance:so.sao.integration.basicData.Products@6a4f787b]" name="searchProduct" duration-ms="6683" started-at="2017-10-13T16:21:44Z" finished-at="2017-10-13T16:21:50Z">
+        </test-method> <!-- newRole -->
+        <test-method status="PASS" signature="alterRole()[pri:3, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="alterRole" duration-ms="11274" started-at="2017-10-16T17:57:01Z" finished-at="2017-10-16T17:57:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="alterProduct()[pri:4, instance:so.sao.integration.basicData.Products@6a4f787b]" name="alterProduct" duration-ms="4899" started-at="2017-10-13T16:21:50Z" finished-at="2017-10-13T16:21:55Z">
+        </test-method> <!-- alterRole -->
+        <test-method status="PASS" signature="delRole()[pri:4, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="delRole" duration-ms="3310" started-at="2017-10-16T17:57:12Z" finished-at="2017-10-16T17:57:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alterProduct -->
-        <test-method status="PASS" signature="stopAndawakenProduct()[pri:5, instance:so.sao.integration.basicData.Products@6a4f787b]" name="stopAndawakenProduct" duration-ms="12916" started-at="2017-10-13T16:21:55Z" finished-at="2017-10-13T16:22:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopAndawakenProduct -->
-        <test-method status="PASS" signature="delProduct()[pri:6, instance:so.sao.integration.basicData.Products@6a4f787b]" name="delProduct" duration-ms="4196" started-at="2017-10-13T16:22:08Z" finished-at="2017-10-13T16:22:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delProduct -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Products@6a4f787b]" name="closebrowser" is-config="true" duration-ms="7" started-at="2017-10-13T16:22:12Z" finished-at="2017-10-13T16:22:12Z">
+        </test-method> <!-- delRole -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="closebrowser" is-config="true" duration-ms="9" started-at="2017-10-16T17:57:15Z" finished-at="2017-10-16T17:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Products@6a4f787b]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-13T16:22:12Z" finished-at="2017-10-13T16:22:12Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Roles@5e5792a0]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-16T17:57:15Z" finished-at="2017-10-16T17:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.Products -->
+      </class> <!-- so.sao.integration.platformService.Roles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

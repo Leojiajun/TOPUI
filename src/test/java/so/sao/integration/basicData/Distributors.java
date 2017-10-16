@@ -57,7 +57,7 @@ public class Distributors extends BaseTest{
 	}
 	
 	@Test(priority=5)//导入一批经销商
-	public void loadin() throws SQLException, InterruptedException, IOException{
+	public void loadinLeader() throws SQLException, InterruptedException, IOException{
 		Tools.button("leaderloadinbtn", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "distributors", driver);

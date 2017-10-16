@@ -30,7 +30,7 @@ public class Tools {
 	//文本框输入内容
 	public static void input(By by,String value,WebDriver driver){
 		WebElement input=driver.findElement(by);
-		//input.sendKeys(Keys.BACK_SPACE);
+		input.sendKeys(Keys.BACK_SPACE);
 		input.clear();
 		input.sendKeys(value);
 	}
@@ -101,7 +101,6 @@ public class Tools {
 //链接数据库
 		public static void connection()
 			      throws ClassNotFoundException, SQLException {
-			    String elementpath = null;
 			    // 设定mysql驱动
 			    Class.forName("com.mysql.jdbc.Driver");
 			    // 建立数据库连接

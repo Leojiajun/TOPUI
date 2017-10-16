@@ -16,7 +16,7 @@ public class ScreenShotOnFailure {
         File screenShotDir = new File(SCREEN_SHOT_PATH);  
         if (!screenShotDir.exists()) {  
             screenShotDir.mkdirs();  
-        }  
+    }  
         
 		String dateStr = Tools.getToday();
         SCREEN_SHOT_NAME = dateStr + ".jpg";  

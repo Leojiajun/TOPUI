@@ -23,9 +23,7 @@ public class Browsers {
 			case 'i':
 				System.setProperty("webdriver.ie.driver", projectpath+"/Tools/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
-				break;
-						
+				break;						
 			}			
 		}
-
 }
