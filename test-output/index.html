@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse-43301384\testng-customsuite.xml</span>
+                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse-1670716431\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +101,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.platformService.Roles" hash-for-method="alterRole">alterRole</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.basicData.Company" hash-for-method="alterCompany">alterCompany</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.platformService.Roles" hash-for-method="delRole">delRole</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.basicData.Company" hash-for-method="delCompany">delCompany</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.platformService.Roles" hash-for-method="newRole">newRole</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.basicData.Company" hash-for-method="newCompany">newCompany</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="so.sao.integration.basicData.Company" hash-for-method="reviewAndawakenCompany">reviewAndawakenCompany</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -129,28 +134,35 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">so.sao.integration.platformService.Roles</span>
+              <span class="class-name">so.sao.integration.basicData.Company</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="alterRole">
-                  </a> <!-- alterRole -->
-                  <span class="method-name">alterRole</span>
+                  <a name="alterCompany">
+                  </a> <!-- alterCompany -->
+                  <span class="method-name">alterCompany</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="delRole">
-                  </a> <!-- delRole -->
-                  <span class="method-name">delRole</span>
+                  <a name="delCompany">
+                  </a> <!-- delCompany -->
+                  <span class="method-name">delCompany</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="newRole">
-                  </a> <!-- newRole -->
-                  <span class="method-name">newRole</span>
+                  <a name="newCompany">
+                  </a> <!-- newCompany -->
+                  <span class="method-name">newCompany</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reviewAndawakenCompany">
+                  </a> <!-- reviewAndawakenCompany -->
+                  <span class="method-name">reviewAndawakenCompany</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse-43301384\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse-1670716431\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,7 +179,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;so.sao.integration.platformService.Roles&quot;/&gt;
+      &lt;class name=&quot;so.sao.integration.basicData.Company&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -207,24 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'alterRole')
-data.setCell(0, 2, 'so.sao.integration.platformService.Roles')
-data.setCell(0, 3, 11274);
+data.setCell(0, 1, 'newCompany')
+data.setCell(0, 2, 'so.sao.integration.basicData.Company')
+data.setCell(0, 3, 33377);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'newRole')
-data.setCell(1, 2, 'so.sao.integration.platformService.Roles')
-data.setCell(1, 3, 7860);
+data.setCell(1, 1, 'delCompany')
+data.setCell(1, 2, 'so.sao.integration.basicData.Company')
+data.setCell(1, 3, 9459);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'delRole')
-data.setCell(2, 2, 'so.sao.integration.platformService.Roles')
-data.setCell(2, 3, 3310);
+data.setCell(2, 1, 'alterCompany')
+data.setCell(2, 2, 'so.sao.integration.basicData.Company')
+data.setCell(2, 3, 8594);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'reviewAndawakenCompany')
+data.setCell(3, 2, 'so.sao.integration.basicData.Company')
+data.setCell(3, 3, 6435);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,38 +266,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">so.sao.integration.platformService.Roles</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">so.sao.integration.basicData.Company</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">conect</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">loadDriver</span>
-                <span class="method-start">181 ms</span>
+                <span class="method-start">218 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">login</span>
-                <span class="method-start">4447 ms</span>
+                <span class="method-start">4217 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">newRole</span>
-                <span class="method-start">9672 ms</span>
+                <span class="method-name">newCompany</span>
+                <span class="method-start">8830 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">alterRole</span>
-                <span class="method-start">17534 ms</span>
+                <span class="method-name">reviewAndawakenCompany</span>
+                <span class="method-start">42209 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">delRole</span>
-                <span class="method-start">28809 ms</span>
+                <span class="method-name">alterCompany</span>
+                <span class="method-start">48647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delCompany</span>
+                <span class="method-start">57243 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">32120 ms</span>
+                <span class="method-start">66703 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">closedb</span>
-                <span class="method-start">32129 ms</span>
+                <span class="method-start">66711 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
