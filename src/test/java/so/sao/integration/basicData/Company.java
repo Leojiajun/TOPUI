@@ -14,6 +14,7 @@ public class Company extends BaseTest{
 	private String test1=Tools.getRandomString(7);
 	@Test(priority=2)//新建企业并审核启用
 	public void newCompany() throws SQLException, InterruptedException, IOException{
+		System.out.println("新建企业并审核启用");
 		Tools.button("basedata", "company", driver);
 		Thread.sleep(2000);
 		Tools.button("companymanage", "company", driver);
