@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="so.sao.integration.common.test">
+      <class name="so.sao.integration.basicData.Company">
         <methods>
           <include name="conect"/>
-          <include name="test"/>
+          <include name="closebrowser"/>
+          <include name="login"/>
+          <include name="newCompany"/>
           <include name="loadDriver"/>
+          <include name="closedb"/>
         </methods>
-      </class> <!-- so.sao.integration.common.test -->
+      </class> <!-- so.sao.integration.basicData.Company -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
