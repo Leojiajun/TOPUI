@@ -1,83 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66733" started-at="2017-10-17T09:55:01Z" finished-at="2017-10-17T09:56:07Z">
+  <suite name="Default suite" duration-ms="43774" started-at="2017-10-18T03:23:58Z" finished-at="2017-10-18T03:24:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66733" started-at="2017-10-17T09:55:01Z" finished-at="2017-10-17T09:56:07Z">
+    <test name="Default test" duration-ms="43774" started-at="2017-10-18T03:23:58Z" finished-at="2017-10-18T03:24:41Z">
       <class name="so.sao.integration.basicData.Company">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="conect" is-config="true" duration-ms="188" started-at="2017-10-17T17:55:01Z" finished-at="2017-10-17T17:55:01Z">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="conect" is-config="true" duration-ms="198" started-at="2017-10-18T11:23:58Z" finished-at="2017-10-18T11:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="loadDriver" is-config="true" duration-ms="3735" started-at="2017-10-17T17:55:01Z" finished-at="2017-10-17T17:55:05Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="loadDriver" is-config="true" duration-ms="3671" started-at="2017-10-18T11:23:58Z" finished-at="2017-10-18T11:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="login" is-config="true" duration-ms="4935" started-at="2017-10-17T17:55:05Z" finished-at="2017-10-17T17:55:09Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="login" is-config="true" duration-ms="4676" started-at="2017-10-18T11:24:02Z" finished-at="2017-10-18T11:24:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="newCompany()[pri:2, instance:so.sao.integration.basicData.Company@6a4f787b]" name="newCompany" duration-ms="33047" started-at="2017-10-17T17:55:09Z" finished-at="2017-10-17T17:55:42Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at so.sao.integration.basicData.Company.newCompany(Company.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="newCompany()[pri:2, instance:so.sao.integration.basicData.Company@47c62251]" name="newCompany" duration-ms="10572" started-at="2017-10-18T11:24:06Z" finished-at="2017-10-18T11:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newCompany -->
-        <test-method status="PASS" signature="reviewAndawakenCompany()[pri:3, instance:so.sao.integration.basicData.Company@6a4f787b]" name="reviewAndawakenCompany" duration-ms="6424" started-at="2017-10-17T17:55:43Z" finished-at="2017-10-17T17:55:49Z">
+        <test-method status="PASS" signature="reviewAndawakenCompany()[pri:3, instance:so.sao.integration.basicData.Company@47c62251]" name="reviewAndawakenCompany" duration-ms="6428" started-at="2017-10-18T11:24:17Z" finished-at="2017-10-18T11:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reviewAndawakenCompany -->
-        <test-method status="PASS" signature="alterCompany()[pri:4, instance:so.sao.integration.basicData.Company@6a4f787b]" name="alterCompany" duration-ms="8641" started-at="2017-10-17T17:55:49Z" finished-at="2017-10-17T17:55:58Z">
+        <test-method status="PASS" signature="alterCompany()[pri:4, instance:so.sao.integration.basicData.Company@47c62251]" name="alterCompany" duration-ms="8826" started-at="2017-10-18T11:24:23Z" finished-at="2017-10-18T11:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alterCompany -->
-        <test-method status="PASS" signature="delCompany()[pri:5, instance:so.sao.integration.basicData.Company@6a4f787b]" name="delCompany" duration-ms="9373" started-at="2017-10-17T17:55:58Z" finished-at="2017-10-17T17:56:07Z">
+        <test-method status="PASS" signature="delCompany()[pri:5, instance:so.sao.integration.basicData.Company@47c62251]" name="delCompany" duration-ms="9370" started-at="2017-10-18T11:24:32Z" finished-at="2017-10-18T11:24:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delCompany -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="closebrowser" is-config="true" duration-ms="14" started-at="2017-10-17T17:56:07Z" finished-at="2017-10-17T17:56:07Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="closebrowser" is-config="true" duration-ms="15" started-at="2017-10-18T11:24:41Z" finished-at="2017-10-18T11:24:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-17T17:56:07Z" finished-at="2017-10-17T17:56:07Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-18T11:24:41Z" finished-at="2017-10-18T11:24:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
