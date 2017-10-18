@@ -70,7 +70,7 @@
                               </property>
                               <property>
                                 <name>listener</name>
-                                <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                                <value></value>
                               </property>
                            </properties>
 						</configuration>
@@ -101,7 +101,7 @@
     <version>6.9.9</version>
     </dependency>
     
-    
+
     
     <dependency>
     <groupId>org.xerial</groupId>
