@@ -55,24 +55,14 @@
 							</includes>
 							<suiteXmlFiles> 						
 							<suiteXmlFile>src/test/resources/suite/company.xml</suiteXmlFile>
-							<suiteXmlFile>src/test/resources/suite/datadictionary.xml</suiteXmlFile>
-							<suiteXmlFile>src/test/resources/suite/distributors.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/factories.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/products.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/distributors.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/salesregion.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/datadictionary.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/roles.xml</suiteXmlFile>
-							<suiteXmlFile>src/test/resources/suite/users.xml</suiteXmlFile>	
+							<suiteXmlFile>src/test/resources/suite/users.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							<properties>
-                              <property>
-                                <name>usedefaultlisteners</name>
-                                <value>false</value>
-                              </property>
-                              <property>
-                                <name>listener</name>
-                                <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
-                              </property>
-                           </properties>
 						</configuration>
 					</execution>
 				</executions>
@@ -101,27 +91,7 @@
     <version>6.9.9</version>
     </dependency>
     
-	<!-- 依赖reportNg 关联testNg -->
-        <dependency>
-            <groupId>org.uncommons</groupId>
-            <artifactId>reportng</artifactId>
-            <version>1.1.4</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.testng</groupId>
-                    <artifactId>testng</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
- 
-        <!-- 依赖Guice -->
-        <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
-            <version>3.0</version>
-            <scope>test</scope>
-        </dependency>
+	
     
     <dependency>
     <groupId>org.xerial</groupId>
