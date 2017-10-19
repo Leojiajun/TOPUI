@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43774" started-at="2017-10-18T03:23:58Z" finished-at="2017-10-18T03:24:41Z">
+  <suite name="Default suite" duration-ms="44935" started-at="2017-10-19T01:22:30Z" finished-at="2017-10-19T01:23:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43774" started-at="2017-10-18T03:23:58Z" finished-at="2017-10-18T03:24:41Z">
+    <test name="Default test" duration-ms="44935" started-at="2017-10-19T01:22:30Z" finished-at="2017-10-19T01:23:15Z">
       <class name="so.sao.integration.basicData.Company">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="conect" is-config="true" duration-ms="198" started-at="2017-10-18T11:23:58Z" finished-at="2017-10-18T11:23:58Z">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="conect" is-config="true" duration-ms="300" started-at="2017-10-19T09:22:30Z" finished-at="2017-10-19T09:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="loadDriver" is-config="true" duration-ms="3671" started-at="2017-10-18T11:23:58Z" finished-at="2017-10-18T11:24:02Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="loadDriver" is-config="true" duration-ms="4513" started-at="2017-10-19T09:22:31Z" finished-at="2017-10-19T09:22:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="login" is-config="true" duration-ms="4676" started-at="2017-10-18T11:24:02Z" finished-at="2017-10-18T11:24:06Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="login" is-config="true" duration-ms="4912" started-at="2017-10-19T09:22:35Z" finished-at="2017-10-19T09:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newCompany()[pri:2, instance:so.sao.integration.basicData.Company@47c62251]" name="newCompany" duration-ms="10572" started-at="2017-10-18T11:24:06Z" finished-at="2017-10-18T11:24:17Z">
+        <test-method status="PASS" signature="newCompany()[pri:2, instance:so.sao.integration.basicData.Company@6a4f787b]" name="newCompany" duration-ms="10574" started-at="2017-10-19T09:22:40Z" finished-at="2017-10-19T09:22:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newCompany -->
-        <test-method status="PASS" signature="reviewAndawakenCompany()[pri:3, instance:so.sao.integration.basicData.Company@47c62251]" name="reviewAndawakenCompany" duration-ms="6428" started-at="2017-10-18T11:24:17Z" finished-at="2017-10-18T11:24:23Z">
+        <test-method status="PASS" signature="reviewAndawakenCompany()[pri:3, instance:so.sao.integration.basicData.Company@6a4f787b]" name="reviewAndawakenCompany" duration-ms="6451" started-at="2017-10-19T09:22:51Z" finished-at="2017-10-19T09:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reviewAndawakenCompany -->
-        <test-method status="PASS" signature="alterCompany()[pri:4, instance:so.sao.integration.basicData.Company@47c62251]" name="alterCompany" duration-ms="8826" started-at="2017-10-18T11:24:23Z" finished-at="2017-10-18T11:24:32Z">
+        <test-method status="PASS" signature="alterCompany()[pri:4, instance:so.sao.integration.basicData.Company@6a4f787b]" name="alterCompany" duration-ms="8805" started-at="2017-10-19T09:22:57Z" finished-at="2017-10-19T09:23:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alterCompany -->
-        <test-method status="PASS" signature="delCompany()[pri:5, instance:so.sao.integration.basicData.Company@47c62251]" name="delCompany" duration-ms="9370" started-at="2017-10-18T11:24:32Z" finished-at="2017-10-18T11:24:41Z">
+        <test-method status="PASS" signature="delCompany()[pri:5, instance:so.sao.integration.basicData.Company@6a4f787b]" name="delCompany" duration-ms="9358" started-at="2017-10-19T09:23:06Z" finished-at="2017-10-19T09:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delCompany -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="closebrowser" is-config="true" duration-ms="15" started-at="2017-10-18T11:24:41Z" finished-at="2017-10-18T11:24:41Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="closebrowser" is-config="true" duration-ms="8" started-at="2017-10-19T09:23:15Z" finished-at="2017-10-19T09:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Company@47c62251]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-18T11:24:41Z" finished-at="2017-10-18T11:24:41Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Company@6a4f787b]" name="closedb" is-config="true" duration-ms="1" started-at="2017-10-19T09:23:15Z" finished-at="2017-10-19T09:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->

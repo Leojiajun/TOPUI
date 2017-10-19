@@ -18,7 +18,7 @@ public class BaseTest {
 
 	@BeforeClass
 	public void loadDriver() {
-		Browsers browser = new Browsers('c');
+		Browsers browser = new Browsers('f');
 		driver = browser.driver;
 	}
 	@BeforeClass
