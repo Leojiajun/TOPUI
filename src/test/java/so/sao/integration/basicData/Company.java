@@ -39,7 +39,7 @@ public class Company extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("不成功"));
 	}	
-	@Test(priority=3)//审核启用企业
+	//@Test(priority=3)//审核启用企业
 	public void reviewAndawakenCompany() throws SQLException, InterruptedException{	
 		Thread.sleep(2000);
 		Tools.button("review", "company", driver);
@@ -51,7 +51,7 @@ public class Company extends BaseTest{
 		Tools.button("awakencompanysure", "company", driver);
 		Thread.sleep(1000);
 	}
-	@Test(priority=4)//修改一个企业
+	//@Test(priority=4)//修改一个企业
 	public void alterCompany() throws SQLException, InterruptedException{
 		Thread.sleep(2000);
 		Tools.button("altercompany", "company", driver);
@@ -67,7 +67,7 @@ public class Company extends BaseTest{
 	}
 	
 	
-	@Test(priority=5)//删除一个企业
+	//@Test(priority=5)//删除一个企业
 	public void delCompany() throws SQLException, InterruptedException{
 		driver.navigate().refresh();
 		Thread.sleep(2000);
