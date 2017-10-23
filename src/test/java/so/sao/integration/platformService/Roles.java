@@ -35,7 +35,6 @@ public class Roles extends BaseTest{
 		Tools.input("comment", "roles", test, driver);
 		Thread.sleep(2000);
 		Tools.button("choiceplatform", "roles", driver);
-		System.out.println("*****jjj");
 		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
 		Tools.button("alterrolesurebtn", "roles", driver);
 		Tools.waitForElementPresent("addrole", "roles", driver);
