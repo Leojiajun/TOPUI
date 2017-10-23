@@ -41,6 +41,7 @@ public class SalesRegion extends BaseTest{
 		Runtime.getRuntime().exec("D:/uploadexe/salesarea.exe");
 		Thread.sleep(30000);
 		Tools.button("uploadsurebtn", "salesregion", driver);
+		Thread.sleep(5000);
 	}
 }
 
