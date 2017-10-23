@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70011" started-at="2017-10-23T08:47:03Z" finished-at="2017-10-23T08:48:13Z">
+  <suite name="Default suite" duration-ms="58597" started-at="2017-10-23T09:00:25Z" finished-at="2017-10-23T09:01:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70011" started-at="2017-10-23T08:47:03Z" finished-at="2017-10-23T08:48:13Z">
-      <class name="so.sao.integration.basicData.Distributors">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Distributors@224edc67]" name="conect" is-config="true" duration-ms="225" started-at="2017-10-23T16:47:03Z" finished-at="2017-10-23T16:47:03Z">
+    <test name="Default test" duration-ms="58597" started-at="2017-10-23T09:00:25Z" finished-at="2017-10-23T09:01:24Z">
+      <class name="so.sao.integration.basicData.SalesRegion">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="conect" is-config="true" duration-ms="225" started-at="2017-10-23T17:00:25Z" finished-at="2017-10-23T17:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Distributors@224edc67]" name="loadDriver" is-config="true" duration-ms="3729" started-at="2017-10-23T16:47:03Z" finished-at="2017-10-23T16:47:07Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="loadDriver" is-config="true" duration-ms="2752" started-at="2017-10-23T17:00:25Z" finished-at="2017-10-23T17:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.Distributors@224edc67]" name="login" is-config="true" duration-ms="4914" started-at="2017-10-23T16:47:07Z" finished-at="2017-10-23T16:47:11Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="login" is-config="true" duration-ms="6380" started-at="2017-10-23T17:00:28Z" finished-at="2017-10-23T17:00:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newLeader()[pri:2, instance:so.sao.integration.basicData.Distributors@224edc67]" name="newLeader" duration-ms="12559" started-at="2017-10-23T16:47:11Z" finished-at="2017-10-23T16:47:24Z">
+        <test-method status="PASS" signature="addSalesRegion()[pri:2, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="addSalesRegion" duration-ms="6182" started-at="2017-10-23T17:00:34Z" finished-at="2017-10-23T17:00:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newLeader -->
-        <test-method status="PASS" signature="alterLeader()[pri:3, instance:so.sao.integration.basicData.Distributors@224edc67]" name="alterLeader" duration-ms="7786" started-at="2017-10-23T16:47:24Z" finished-at="2017-10-23T16:47:32Z">
+        </test-method> <!-- addSalesRegion -->
+        <test-method status="PASS" signature="delSalesRegion()[pri:3, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="delSalesRegion" duration-ms="3310" started-at="2017-10-23T17:00:41Z" finished-at="2017-10-23T17:00:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alterLeader -->
-        <test-method status="PASS" signature="delLeader()[pri:4, instance:so.sao.integration.basicData.Distributors@224edc67]" name="delLeader" duration-ms="3256" started-at="2017-10-23T16:47:32Z" finished-at="2017-10-23T16:47:35Z">
+        </test-method> <!-- delSalesRegion -->
+        <test-method status="PASS" signature="leadinSalesRegion()[pri:4, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="leadinSalesRegion" duration-ms="37418" started-at="2017-10-23T17:00:44Z" finished-at="2017-10-23T17:01:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delLeader -->
-        <test-method status="PASS" signature="loadinLeader()[pri:5, instance:so.sao.integration.basicData.Distributors@224edc67]" name="loadinLeader" duration-ms="37514" started-at="2017-10-23T16:47:35Z" finished-at="2017-10-23T16:48:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadinLeader -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Distributors@224edc67]" name="closebrowser" is-config="true" duration-ms="10" started-at="2017-10-23T16:48:13Z" finished-at="2017-10-23T16:48:13Z">
+        </test-method> <!-- leadinSalesRegion -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="closebrowser" is-config="true" duration-ms="2312" started-at="2017-10-23T17:01:21Z" finished-at="2017-10-23T17:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Distributors@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-23T16:48:13Z" finished-at="2017-10-23T16:48:13Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-23T17:01:24Z" finished-at="2017-10-23T17:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.Distributors -->
+      </class> <!-- so.sao.integration.basicData.SalesRegion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

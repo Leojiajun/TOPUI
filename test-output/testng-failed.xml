@@ -3,16 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="so.sao.integration.basicData.Company">
+      <class name="so.sao.integration.basicData.DataDictionary">
         <methods>
           <include name="conect"/>
           <include name="closebrowser"/>
           <include name="login"/>
-          <include name="newCompany"/>
+          <include name="delDataDictionary"/>
           <include name="loadDriver"/>
+          <include name="newDataDictionary"/>
           <include name="closedb"/>
         </methods>
-      </class> <!-- so.sao.integration.basicData.Company -->
+      </class> <!-- so.sao.integration.basicData.DataDictionary -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
