@@ -33,7 +33,7 @@ public class Company extends BaseTest{
 		Thread.sleep(2000);
 		Tools.button("cardpicture", "company", driver);
 		Thread.sleep(2000);
-		Runtime.getRuntime().exec("D:/uploadexe/companypicture.exe");
+		Runtime.getRuntime().exec("D:/uploadexe/chromecompanypicture.exe");
 		Thread.sleep(20000);
 		Tools.button("keepcompany", "company", driver);
 		Thread.sleep(1000);

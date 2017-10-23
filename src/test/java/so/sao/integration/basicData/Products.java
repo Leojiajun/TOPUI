@@ -102,7 +102,7 @@ public class Products extends BaseTest {
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "products", driver);
 		Thread.sleep(2000);
-		Runtime.getRuntime().exec("D:/uploadexe/product.exe");
+		Runtime.getRuntime().exec("D:/uploadexe/chromeproduct.exe");
 		Thread.sleep(20000);
 		Tools.button("uploadsurebtn", "products", driver);
 		Thread.sleep(5000);
