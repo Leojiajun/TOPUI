@@ -17,6 +17,7 @@ public class Roles extends BaseTest{
 		Thread.sleep(2000);
 		Tools.button("addrole", "roles", driver);
 		Tools.waitForElementPresent("choiceactivity", "roles", driver);
+		Thread.sleep(2000);
 		Tools.input("rolename", "roles", Tools.getRandomString(5), driver);
 		Tools.button("choiceactivity", "roles", driver);
 		Tools.button("pulldown", "roles", driver);
@@ -32,18 +33,22 @@ public class Roles extends BaseTest{
 		Thread.sleep(2000);
 		Tools.button("alterrole", "roles", driver);
 		Tools.waitForElementPresent("choiceplatform", "roles", driver);
+		Thread.sleep(2000);
 		Tools.input("comment", "roles", test, driver);
 		Thread.sleep(2000);
 		Tools.button("choiceplatform", "roles", driver);
 		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
+		Thread.sleep(2000);
 		Tools.button("alterrolesurebtn", "roles", driver);
 		Tools.waitForElementPresent("addrole", "roles", driver);
+		Thread.sleep(2000);
 		Assert.assertTrue(driver.getPageSource().contains(test));
 	}
 	
 	
 	@Test(priority=4)//删除角色
 	public void delRole() throws SQLException, InterruptedException{
+		Thread.sleep(2000);
 		Tools.button("delrole", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("delrolesurebtn", "roles", driver);

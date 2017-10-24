@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58597" started-at="2017-10-23T09:00:25Z" finished-at="2017-10-23T09:01:24Z">
+  <suite name="Default suite" duration-ms="30559" started-at="2017-10-24T01:36:43Z" finished-at="2017-10-24T01:37:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58597" started-at="2017-10-23T09:00:25Z" finished-at="2017-10-23T09:01:24Z">
-      <class name="so.sao.integration.basicData.SalesRegion">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="conect" is-config="true" duration-ms="225" started-at="2017-10-23T17:00:25Z" finished-at="2017-10-23T17:00:25Z">
+    <test name="Default test" duration-ms="30559" started-at="2017-10-24T01:36:43Z" finished-at="2017-10-24T01:37:13Z">
+      <class name="so.sao.integration.platformService.Roles">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="conect" is-config="true" duration-ms="199" started-at="2017-10-24T09:36:43Z" finished-at="2017-10-24T09:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="loadDriver" is-config="true" duration-ms="2752" started-at="2017-10-23T17:00:25Z" finished-at="2017-10-23T17:00:28Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="loadDriver" is-config="true" duration-ms="2442" started-at="2017-10-24T09:36:43Z" finished-at="2017-10-24T09:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="login" is-config="true" duration-ms="6380" started-at="2017-10-23T17:00:28Z" finished-at="2017-10-23T17:00:34Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="login" is-config="true" duration-ms="6404" started-at="2017-10-24T09:36:45Z" finished-at="2017-10-24T09:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="addSalesRegion()[pri:2, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="addSalesRegion" duration-ms="6182" started-at="2017-10-23T17:00:34Z" finished-at="2017-10-23T17:00:41Z">
+        <test-method status="PASS" signature="newRole()[pri:2, instance:so.sao.integration.platformService.Roles@224edc67]" name="newRole" duration-ms="7629" started-at="2017-10-24T09:36:52Z" finished-at="2017-10-24T09:36:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addSalesRegion -->
-        <test-method status="PASS" signature="delSalesRegion()[pri:3, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="delSalesRegion" duration-ms="3310" started-at="2017-10-23T17:00:41Z" finished-at="2017-10-23T17:00:44Z">
+        </test-method> <!-- newRole -->
+        <test-method status="PASS" signature="alterRole()[pri:3, instance:so.sao.integration.platformService.Roles@224edc67]" name="alterRole" duration-ms="10631" started-at="2017-10-24T09:36:59Z" finished-at="2017-10-24T09:37:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delSalesRegion -->
-        <test-method status="PASS" signature="leadinSalesRegion()[pri:4, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="leadinSalesRegion" duration-ms="37418" started-at="2017-10-23T17:00:44Z" finished-at="2017-10-23T17:01:21Z">
+        </test-method> <!-- alterRole -->
+        <test-method status="PASS" signature="delRole()[pri:4, instance:so.sao.integration.platformService.Roles@224edc67]" name="delRole" duration-ms="3209" started-at="2017-10-24T09:37:10Z" finished-at="2017-10-24T09:37:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- leadinSalesRegion -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="closebrowser" is-config="true" duration-ms="2312" started-at="2017-10-23T17:01:21Z" finished-at="2017-10-23T17:01:24Z">
+        </test-method> <!-- delRole -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closebrowser" is-config="true" duration-ms="30" started-at="2017-10-24T09:37:13Z" finished-at="2017-10-24T09:37:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.SalesRegion@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-23T17:01:24Z" finished-at="2017-10-23T17:01:24Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-24T09:37:13Z" finished-at="2017-10-24T09:37:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.SalesRegion -->
+      </class> <!-- so.sao.integration.platformService.Roles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
