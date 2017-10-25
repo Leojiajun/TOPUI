@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30559" started-at="2017-10-24T01:36:43Z" finished-at="2017-10-24T01:37:13Z">
+  <suite name="Default suite" duration-ms="40260" started-at="2017-10-25T05:55:02Z" finished-at="2017-10-25T05:55:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30559" started-at="2017-10-24T01:36:43Z" finished-at="2017-10-24T01:37:13Z">
+    <test name="Default test" duration-ms="40260" started-at="2017-10-25T05:55:02Z" finished-at="2017-10-25T05:55:42Z">
       <class name="so.sao.integration.platformService.Roles">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="conect" is-config="true" duration-ms="199" started-at="2017-10-24T09:36:43Z" finished-at="2017-10-24T09:36:43Z">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="conect" is-config="true" duration-ms="184" started-at="2017-10-25T13:55:02Z" finished-at="2017-10-25T13:55:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="loadDriver" is-config="true" duration-ms="2442" started-at="2017-10-24T09:36:43Z" finished-at="2017-10-24T09:36:45Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="loadDriver" is-config="true" duration-ms="2707" started-at="2017-10-25T13:55:02Z" finished-at="2017-10-25T13:55:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="login" is-config="true" duration-ms="6404" started-at="2017-10-24T09:36:45Z" finished-at="2017-10-24T09:36:52Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="login" is-config="true" duration-ms="6071" started-at="2017-10-25T13:55:05Z" finished-at="2017-10-25T13:55:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newRole()[pri:2, instance:so.sao.integration.platformService.Roles@224edc67]" name="newRole" duration-ms="7629" started-at="2017-10-24T09:36:52Z" finished-at="2017-10-24T09:36:59Z">
+        <test-method status="PASS" signature="newRole()[pri:2, instance:so.sao.integration.platformService.Roles@224edc67]" name="newRole" duration-ms="9351" started-at="2017-10-25T13:55:11Z" finished-at="2017-10-25T13:55:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newRole -->
-        <test-method status="PASS" signature="alterRole()[pri:3, instance:so.sao.integration.platformService.Roles@224edc67]" name="alterRole" duration-ms="10631" started-at="2017-10-24T09:36:59Z" finished-at="2017-10-24T09:37:10Z">
+        <test-method status="PASS" signature="alterRole()[pri:3, instance:so.sao.integration.platformService.Roles@224edc67]" name="alterRole" duration-ms="16641" started-at="2017-10-25T13:55:21Z" finished-at="2017-10-25T13:55:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alterRole -->
-        <test-method status="PASS" signature="delRole()[pri:4, instance:so.sao.integration.platformService.Roles@224edc67]" name="delRole" duration-ms="3209" started-at="2017-10-24T09:37:10Z" finished-at="2017-10-24T09:37:13Z">
+        <test-method status="PASS" signature="delRole()[pri:4, instance:so.sao.integration.platformService.Roles@224edc67]" name="delRole" duration-ms="5240" started-at="2017-10-25T13:55:37Z" finished-at="2017-10-25T13:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delRole -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closebrowser" is-config="true" duration-ms="30" started-at="2017-10-24T09:37:13Z" finished-at="2017-10-24T09:37:13Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closebrowser" is-config="true" duration-ms="44" started-at="2017-10-25T13:55:42Z" finished-at="2017-10-25T13:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-24T09:37:13Z" finished-at="2017-10-24T09:37:13Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Roles@224edc67]" name="closedb" is-config="true" duration-ms="3" started-at="2017-10-25T13:55:42Z" finished-at="2017-10-25T13:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
