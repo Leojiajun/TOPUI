@@ -24,7 +24,7 @@ public class Browsers {
 				driver = new ChromeDriver(options);
 				break;
 			case 'i':
-				System.setProperty("webdriver.ie.driver", projectpath+"/Tools/IEDriverServer.exe");
+				System.setProperty("webdriver.ie.driver", "D:/soft/IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 				break;						
 			}			
