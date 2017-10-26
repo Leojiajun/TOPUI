@@ -1,4 +1,6 @@
 package so.sao.integration.util;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,7 +22,9 @@ public class Browsers {
 			case 'c':
 				System.setProperty("webdriver.chrome.driver","D:/soft/chromedriver.exe");
 				ChromeOptions options = new ChromeOptions();
-				options.setBinary("C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+				Properties prop = System.getProperties();
+			    String oo = prop.getProperty("user.home");
+				options.setBinary(oo+"\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 				driver = new ChromeDriver(options);
 				break;
 			case 'i':

@@ -2,6 +2,7 @@ package so.sao.integration.platformService;
 
 import java.sql.SQLException;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,8 +12,10 @@ import so.sao.integration.util.Tools;
 public class Roles extends BaseTest{
 	@Test(priority=2)//新建角色
 	public void newRole() throws SQLException, InterruptedException{
-		Tools.button("platformservice", "roles", driver);
+		Actions action = new Actions(driver);
 		Thread.sleep(2000);
+		action.moveToElement(Tools.getelement("platformservice", "roles", driver)).build().perform();//悬浮在系统平台
+		Thread.sleep(1000);
 		Tools.button("rolemanage", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("addrole", "roles", driver);
@@ -22,6 +25,7 @@ public class Roles extends BaseTest{
 		Tools.button("choiceactivity", "roles", driver);
 		Tools.button("pulldown", "roles", driver);
 		Tools.button("choiceCRM", "roles", driver);
+		Tools.waitForElementPresent("addrolesurebtn", "roles", driver);
 		Tools.button("addrolesurebtn", "roles", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("创建成功"));
@@ -48,7 +52,7 @@ public class Roles extends BaseTest{
 	
 	@Test(priority=4)//删除角色
 	public void delRole() throws SQLException, InterruptedException{
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Tools.button("delrole", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("delrolesurebtn", "roles", driver);
