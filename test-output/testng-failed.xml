@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="so.sao.integration.platformService.Roles">
+      <class name="so.sao.integration.basicData.Company">
         <methods>
           <include name="conect"/>
-          <include name="alterRole"/>
           <include name="closebrowser"/>
+          <include name="alterCompany"/>
           <include name="login"/>
-          <include name="newRole"/>
+          <include name="newCompany"/>
+          <include name="reviewAndawakenCompany"/>
           <include name="loadDriver"/>
-          <include name="delRole"/>
           <include name="closedb"/>
         </methods>
-      </class> <!-- so.sao.integration.platformService.Roles -->
+      </class> <!-- so.sao.integration.basicData.Company -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

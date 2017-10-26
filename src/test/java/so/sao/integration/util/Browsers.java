@@ -22,7 +22,8 @@ public class Browsers {
 			case 'c':
 				System.setProperty("webdriver.chrome.driver","D:/soft/chromedriver.exe");
 				ChromeOptions options = new ChromeOptions();
-				options.setBinary("C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+				//options.setBinary("C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+				options.setBinary("D:\\chromexe\\Google\\Chrome\\Application\\chrome.exe");
 				driver = new ChromeDriver(options);
 				break;
 			case 'i':
