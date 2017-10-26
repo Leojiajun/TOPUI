@@ -35,7 +35,6 @@ public class Distributors extends BaseTest{
 	
 	@Test(priority=3)//修改经销商
 	public void alterLeader() throws SQLException, InterruptedException{
-		Thread.sleep(2000);
 		Tools.button("alterlleader", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.input("leadercontact", "distributors", "contactA", driver);
@@ -50,7 +49,6 @@ public class Distributors extends BaseTest{
 	
 	@Test(priority=4)//删除一个经销商
 	public void delLeader() throws SQLException, InterruptedException{
-		Thread.sleep(2000);
 		Tools.button("deleteleader", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("deleteleadersurebtn", "distributors", driver);
@@ -59,12 +57,11 @@ public class Distributors extends BaseTest{
 	}
 	
 	@Test(priority=5)//导入一批经销商
-	public void loadinLeader() throws SQLException, InterruptedException, IOException{
-		Thread.sleep(2000);
+	public void loadin() throws SQLException, InterruptedException, IOException{
 		Tools.button("leaderloadinbtn", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "distributors", driver);
-		Runtime.getRuntime().exec("D:/uploadexe/chromefranchiser.exe");
+		Runtime.getRuntime().exec("D:/chromeuploadexe/chromefranchiser.exe");
 		Thread.sleep(30000);
 		Tools.button("uploadsurebtn", "distributors", driver);
 		Thread.sleep(5000);

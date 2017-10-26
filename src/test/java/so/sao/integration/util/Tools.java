@@ -151,4 +151,21 @@ public class Tools {
 			(new WebDriverWait(driver,timeout)).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(getdbData(keyname, tablename))));
 		}	
 	}
+	
+	//等待元素可操作
+	public static void waitForElementIsEnable(String keyname, String tablename,WebDriver driver) throws SQLException{
+		try{
+			(new WebDriverWait(driver,timeout)).until(ExpectedConditions.elementToBeClickable(By.xpath(getdbData(keyname, tablename))));
+		}catch(TimeoutException e){
+			(new WebDriverWait(driver,timeout)).until(ExpectedConditions.elementToBeClickable(By.cssSelector(getdbData(keyname, tablename))));
+		}	
+	}
+	
+	public static void JavaScriptClick(WebElement element,WebDriver driver){
+		if (element.isEnabled() && element.isDisplayed()){
+			((JavascriptExecutor) driver ).executeScript("arguments[0].click();",element);
+		}else{
+			System.out.println("页面上的元素无法进行单击操作");		
+		}
+	}
 }

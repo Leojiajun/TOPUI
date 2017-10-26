@@ -38,10 +38,9 @@ public class SalesRegion extends BaseTest{
 		Tools.button("salesarealeadin", "salesregion", driver);
 		Thread.sleep(2000);
 		Tools.button("uploadchoice", "salesregion", driver);
-		Runtime.getRuntime().exec("D:/uploadexe/chromesalesarea.exe");
+		Runtime.getRuntime().exec("D:/chromeuploadexe/chromesalesarea.exe");
 		Thread.sleep(30000);
 		Tools.button("uploadsurebtn", "salesregion", driver);
-		Thread.sleep(5000);
 	}
 }
 

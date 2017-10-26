@@ -41,7 +41,7 @@ public class BaseTest {
 	// 关闭浏览器
 	@AfterClass
 	public void closebrowser() throws Exception {
-		driver.close();
+		driver.quit();
 
 	}
 	@AfterClass

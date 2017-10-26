@@ -2,7 +2,6 @@ package so.sao.integration.platformService;
 
 import java.sql.SQLException;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,20 +11,16 @@ import so.sao.integration.util.Tools;
 public class Roles extends BaseTest{
 	@Test(priority=2)//新建角色
 	public void newRole() throws SQLException, InterruptedException{
-		Actions action = new Actions(driver);
+		Tools.button("platformservice", "roles", driver);
 		Thread.sleep(2000);
-		action.moveToElement(Tools.getelement("platformservice", "roles", driver)).build().perform();//悬浮在系统平台
-		Thread.sleep(1000);
 		Tools.button("rolemanage", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("addrole", "roles", driver);
 		Tools.waitForElementPresent("choiceactivity", "roles", driver);
-		Thread.sleep(2000);
 		Tools.input("rolename", "roles", Tools.getRandomString(5), driver);
 		Tools.button("choiceactivity", "roles", driver);
 		Tools.button("pulldown", "roles", driver);
 		Tools.button("choiceCRM", "roles", driver);
-		Tools.waitForElementPresent("addrolesurebtn", "roles", driver);
 		Tools.button("addrolesurebtn", "roles", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("创建成功"));
@@ -37,22 +32,19 @@ public class Roles extends BaseTest{
 		Thread.sleep(2000);
 		Tools.button("alterrole", "roles", driver);
 		Tools.waitForElementPresent("choiceplatform", "roles", driver);
-		Thread.sleep(2000);
 		Tools.input("comment", "roles", test, driver);
 		Thread.sleep(2000);
 		Tools.button("choiceplatform", "roles", driver);
+		System.out.println("*****jjj");
 		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
-		Thread.sleep(2000);
 		Tools.button("alterrolesurebtn", "roles", driver);
 		Tools.waitForElementPresent("addrole", "roles", driver);
-		Thread.sleep(2000);
 		Assert.assertTrue(driver.getPageSource().contains(test));
 	}
 	
 	
 	@Test(priority=4)//删除角色
 	public void delRole() throws SQLException, InterruptedException{
-		Thread.sleep(1000);
 		Tools.button("delrole", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("delrolesurebtn", "roles", driver);

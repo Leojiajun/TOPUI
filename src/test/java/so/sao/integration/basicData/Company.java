@@ -12,7 +12,7 @@ import so.sao.integration.util.Tools;
 
 public class Company extends BaseTest{
 	private String test1=Tools.getRandomString(7);
-	@Test(priority=2)//新建企业并审核启用
+	@Test(priority=2)//新建企业并审核启用.
 	public void newCompany() throws SQLException, InterruptedException, IOException{
 		Tools.button("basedata", "company", driver);
 		Thread.sleep(2000);
@@ -32,16 +32,14 @@ public class Company extends BaseTest{
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
 		Thread.sleep(2000);
 		Tools.button("cardpicture", "company", driver);
-		Thread.sleep(2000);
-		Runtime.getRuntime().exec("D:/uploadexe/chromecompanypicture.exe");
+		Runtime.getRuntime().exec("D:/chromeuploadexe/chromecompanypicture.exe");
 		Thread.sleep(20000);
 		Tools.button("keepcompany", "company", driver);
 		Thread.sleep(1000);
-		Assert.assertTrue(driver.getPageSource().contains("成功"));
+		Assert.assertTrue(driver.getPageSource().contains("保存成功"));
 	}	
 	@Test(priority=3)//审核启用企业
 	public void reviewAndawakenCompany() throws SQLException, InterruptedException{	
-		Thread.sleep(2000);
 		Tools.button("review", "company", driver);
 		Thread.sleep(1000);
 		Tools.button("doadd", "company", driver);
@@ -53,7 +51,6 @@ public class Company extends BaseTest{
 	}
 	@Test(priority=4)//修改一个企业
 	public void alterCompany() throws SQLException, InterruptedException{
-		Thread.sleep(2000);
 		Tools.button("altercompany", "company", driver);
 		Thread.sleep(2000);
 		Tools.input("contactname", "company", "Acompanycontact", driver);
@@ -70,7 +67,6 @@ public class Company extends BaseTest{
 	@Test(priority=5)//删除一个企业
 	public void delCompany() throws SQLException, InterruptedException{
 		driver.navigate().refresh();
-		Thread.sleep(2000);
 		Tools.button("basedata", "company", driver);
 		Thread.sleep(2000);
 		Tools.button("companymanage", "company", driver);
