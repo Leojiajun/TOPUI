@@ -30,10 +30,13 @@ public class Products extends BaseTest {
 		Thread.sleep(2000);
 		Tools.button("picturemanage", "products", driver);		
 		Thread.sleep(2000);
-		
-		action.moveToElement(Tools.getelement("part1", "products", driver)).build().perform();//鼠标悬浮在part1
+		//action.moveToElement(Tools.getelement("part1", "products", driver)).build().perform();//鼠标悬浮在part1
+		//Thread.sleep(2000);
+		Tools.button("part1", "products", driver);
+		//Tools.button("uploadpicture", "products", driver);
+		//driver.findElement(By.cssSelector("div.ivu-upload-select>i.ivu-icon-ios-upload-outline")).click();
+		//Tools.JavaScriptClick(Tools.getelement("uploadpicture", "products", driver), driver);
 		Thread.sleep(2000);
-		Tools.button("uploadpicture", "products", driver);
 		Runtime.getRuntime().exec("D:/chromeuploadexe/chromeproductpicture.exe");
 		Thread.sleep(15000);
 		Tools.button("uploadpicturesurebtn", "products", driver);
