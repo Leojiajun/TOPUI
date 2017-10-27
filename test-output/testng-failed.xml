@@ -3,16 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="so.sao.integration.basicData.Products">
+      <class name="so.sao.integration.platformService.Users">
         <methods>
           <include name="conect"/>
           <include name="closebrowser"/>
+          <include name="alterUser"/>
+          <include name="resetUser"/>
           <include name="login"/>
+          <include name="stopUser"/>
+          <include name="newUser"/>
           <include name="loadDriver"/>
-          <include name="stopAndawakenProduct"/>
           <include name="closedb"/>
         </methods>
-      </class> <!-- so.sao.integration.basicData.Products -->
+      </class> <!-- so.sao.integration.platformService.Users -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

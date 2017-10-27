@@ -32,7 +32,7 @@ public class Users extends BaseTest{
 		Tools.button("adduserchoicerole", "users", driver);
 		Thread.sleep(1000);
 		Tools.button("adduserchoiceroleone", "users", driver);
-		Thread.sleep(1000);
+		Tools.waitForElementPresent("addusersurebtn", "users", driver);
 		Tools.button("addusersurebtn", "users", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("保存成功"));
@@ -44,7 +44,7 @@ public class Users extends BaseTest{
 		Thread.sleep(2000);
 		Tools.input("fullname", "users", "测试b", driver);
 		Tools.input("mobile", "users", "13887654321", driver);
-		Thread.sleep(2000);
+		Tools.waitForElementPresent("alterusersurebtn", "users", driver);
 		Tools.button("alterusersurebtn", "users", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("修改成功"));	
@@ -56,7 +56,7 @@ public class Users extends BaseTest{
 		Thread.sleep(2000);
 		Tools.input("resetloginpassword", "users", "ab222222", driver);
 		Tools.input("resetloginpasswordagain", "users", "ab222222", driver);
-		Thread.sleep(2000);
+		Tools.waitForElementPresent("resetusersurebtn", "users", driver);
 		Tools.button("resetusersurebtn", "users", driver);
 		Thread.sleep(1000);
 	}

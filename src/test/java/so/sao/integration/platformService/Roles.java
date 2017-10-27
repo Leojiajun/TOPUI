@@ -21,6 +21,7 @@ public class Roles extends BaseTest{
 		Tools.button("choiceactivity", "roles", driver);
 		Tools.button("pulldown", "roles", driver);
 		Tools.button("choiceCRM", "roles", driver);
+		Tools.waitForElementPresent("addrolesurebtn", "roles", driver);
 		Tools.button("addrolesurebtn", "roles", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("创建成功"));
@@ -35,7 +36,6 @@ public class Roles extends BaseTest{
 		Tools.input("comment", "roles", test, driver);
 		Thread.sleep(2000);
 		Tools.button("choiceplatform", "roles", driver);
-		System.out.println("*****jjj");
 		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
 		Tools.button("alterrolesurebtn", "roles", driver);
 		Tools.waitForElementPresent("addrole", "roles", driver);
