@@ -49,6 +49,8 @@ public class Factories extends BaseTest{
 		Tools.button("alterfactory", "factories", driver);
 		Thread.sleep(2000);
 		Tools.input("factoryaddress", "factories", "北京", driver);
+		Tools.button("factorystyle", "factories", driver);
+		Tools.button("presscompany2", "factories", driver);
 		Thread.sleep(2000);
 		Tools.input("comment", "factories", test, driver);
 		Thread.sleep(2000);

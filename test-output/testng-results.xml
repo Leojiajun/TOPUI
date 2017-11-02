@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37965" started-at="2017-10-26T09:59:36Z" finished-at="2017-10-26T10:00:14Z">
+  <suite name="Default suite" duration-ms="30135" started-at="2017-11-02T08:00:07Z" finished-at="2017-11-02T08:00:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37965" started-at="2017-10-26T09:59:36Z" finished-at="2017-10-26T10:00:14Z">
-      <class name="so.sao.integration.platformService.Users">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.platformService.Users@224edc67]" name="conect" is-config="true" duration-ms="184" started-at="2017-10-26T17:59:36Z" finished-at="2017-10-26T17:59:37Z">
+    <test name="Default test" duration-ms="30135" started-at="2017-11-02T08:00:07Z" finished-at="2017-11-02T08:00:37Z">
+      <class name="so.sao.integration.basicData.SystemParameters">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="conect" is-config="true" duration-ms="200" started-at="2017-11-02T16:00:07Z" finished-at="2017-11-02T16:00:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.platformService.Users@224edc67]" name="loadDriver" is-config="true" duration-ms="2392" started-at="2017-10-26T17:59:37Z" finished-at="2017-10-26T17:59:39Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="loadDriver" is-config="true" duration-ms="2460" started-at="2017-11-02T16:00:07Z" finished-at="2017-11-02T16:00:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.platformService.Users@224edc67]" name="login" is-config="true" duration-ms="6442" started-at="2017-10-26T17:59:39Z" finished-at="2017-10-26T17:59:46Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="login" is-config="true" duration-ms="5880" started-at="2017-11-02T16:00:10Z" finished-at="2017-11-02T16:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newUser()[pri:2, instance:so.sao.integration.platformService.Users@224edc67]" name="newUser" duration-ms="12941" started-at="2017-10-26T17:59:46Z" finished-at="2017-10-26T17:59:58Z">
+        <test-method status="PASS" signature="addSysPat()[pri:1, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="addSysPat" duration-ms="5911" started-at="2017-11-02T16:00:15Z" finished-at="2017-11-02T16:00:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newUser -->
-        <test-method status="PASS" signature="alterUser()[pri:3, instance:so.sao.integration.platformService.Users@224edc67]" name="alterUser" duration-ms="5637" started-at="2017-10-26T17:59:58Z" finished-at="2017-10-26T18:00:04Z">
+        </test-method> <!-- addSysPat -->
+        <test-method status="PASS" signature="alterSysPat()[pri:2, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="alterSysPat" duration-ms="3413" started-at="2017-11-02T16:00:21Z" finished-at="2017-11-02T16:00:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alterUser -->
-        <test-method status="PASS" signature="resetUser()[pri:4, instance:so.sao.integration.platformService.Users@224edc67]" name="resetUser" duration-ms="5444" started-at="2017-10-26T18:00:04Z" finished-at="2017-10-26T18:00:10Z">
+        </test-method> <!-- alterSysPat -->
+        <test-method status="PASS" signature="stopSysPat()[pri:3, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="stopSysPat" duration-ms="4221" started-at="2017-11-02T16:00:25Z" finished-at="2017-11-02T16:00:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resetUser -->
-        <test-method status="PASS" signature="stopUser()[pri:5, instance:so.sao.integration.platformService.Users@224edc67]" name="stopUser" duration-ms="4225" started-at="2017-10-26T18:00:10Z" finished-at="2017-10-26T18:00:14Z">
+        </test-method> <!-- stopSysPat -->
+        <test-method status="PASS" signature="awakenSysPat()[pri:4, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="awakenSysPat" duration-ms="7296" started-at="2017-11-02T16:00:29Z" finished-at="2017-11-02T16:00:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopUser -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.platformService.Users@224edc67]" name="closebrowser" is-config="true" duration-ms="679" started-at="2017-10-26T18:00:14Z" finished-at="2017-10-26T18:00:14Z">
+        </test-method> <!-- awakenSysPat -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="closebrowser" is-config="true" duration-ms="735" started-at="2017-11-02T16:00:36Z" finished-at="2017-11-02T16:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.platformService.Users@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-10-26T18:00:14Z" finished-at="2017-10-26T18:00:14Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-11-02T16:00:37Z" finished-at="2017-11-02T16:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.platformService.Users -->
+      </class> <!-- so.sao.integration.basicData.SystemParameters -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

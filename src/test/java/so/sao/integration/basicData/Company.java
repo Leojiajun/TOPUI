@@ -12,7 +12,7 @@ import so.sao.integration.util.Tools;
 
 public class Company extends BaseTest{
 	private String test1=Tools.getRandomString(7);
-	@Test(priority=2)//新建企业并审核启用.
+	@Test(priority=2)//新建企业
 	public void newCompany() throws SQLException, InterruptedException, IOException{
 		Tools.button("basedata", "company", driver);
 		Thread.sleep(2000);
@@ -48,13 +48,30 @@ public class Company extends BaseTest{
 		Thread.sleep(1000);
 		Tools.button("awakencompanysure", "company", driver);
 		Thread.sleep(1000);
-	}
-	@Test(priority=4)//修改一个企业
+		String testawaken = Tools.getelement("awaken", "company", driver).getText();
+		Assert.assertTrue(testawaken.contains("禁用"));
+	}	
+	@Test(priority=4)//禁用企业
+	public void stopCompany() throws SQLException, InterruptedException{
+		Tools.button("awaken", "company", driver);
+		Thread.sleep(1000);
+		Tools.button("awakencompanysure", "company", driver);
+		Thread.sleep(1000);
+		String teststop = Tools.getelement("awaken", "company", driver).getText();
+		Assert.assertTrue(teststop.contains("启用"));
+	}	
+		
+	@Test(priority=5)//修改一个企业
 	public void alterCompany() throws SQLException, InterruptedException{
 		Tools.button("altercompany", "company", driver);
 		Thread.sleep(2000);
 		Tools.input("contactname", "company", "Acompanycontact", driver);
 		Tools.input("contactphone", "company", "13822225555", driver);
+		Thread.sleep(1000);
+		Tools.input("licence", "company", "123455432112346", driver);
+		Tools.input("productnum", "company", "2", driver);
+		Tools.input("usernum", "company", "2", driver);
+		Tools.input("terminalnum", "company", "1", driver);
 		Thread.sleep(1000);
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
 		Thread.sleep(2000);
@@ -64,7 +81,7 @@ public class Company extends BaseTest{
 	}
 	
 	
-	@Test(priority=5)//删除一个企业
+	@Test(priority=6)//删除一个企业
 	public void delCompany() throws SQLException, InterruptedException{
 		driver.navigate().refresh();
 		Tools.button("basedata", "company", driver);

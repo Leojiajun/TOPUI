@@ -24,6 +24,13 @@ public class Products extends BaseTest {
 		Tools.button("addproduct", "products", driver);
 		Tools.input("productcoding", "products", test1, driver);
 		Tools.input("productname", "products", "PN"+Tools.getRandomString(6), driver);
+		Tools.input("namehelp", "products", Tools.getRandomString(6), driver);
+		Tools.input("saleprice", "products", "10", driver);
+		Tools.input("spec", "products", "10", driver);
+		Tools.button("unitchoice", "products", driver);
+		Tools.button("unit", "products", driver);
+		Thread.sleep(2000);
+		Tools.input("material", "products", "原料", driver);
 		Tools.button("classification", "products", driver);
 		Tools.input("saleprice", "products", "10", driver);
 		Tools.button("wine", "products", driver);
@@ -69,9 +76,16 @@ public class Products extends BaseTest {
 		Tools.button("productalter", "products", driver);
 		Thread.sleep(2000);
 		Tools.input("productcoding", "products", "PC"+Tools.getRandomString(6), driver);
+		Tools.input("namehelp", "products", Tools.getRandomString(5), driver);
 		Tools.input("saleprice", "products", "5", driver);
+		Tools.input("spec", "products", "5", driver);
+		Tools.input("material", "products", "原料2", driver);
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)"); //下拉到页面底部
+		Thread.sleep(2000);
+		driver.switchTo().frame("ueditor_0");//切换到富文本
+		driver.findElement(By.tagName("body")).sendKeys("产品介绍修改产品介绍修改产品介绍修改");//在body中输入内容
 		Thread.sleep(1000);
+		driver.switchTo().defaultContent();//切回来
 		Tools.button("productaltersurebtn", "products", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));

@@ -70,5 +70,18 @@ public class Users extends BaseTest{
 		Assert.assertTrue(teststop.contains("启用"));
 	}
 	
+	@Test(priority=6)//启用用户
+	public void awakenUser() throws SQLException, InterruptedException{
+		Tools.button("userstop", "users", driver);
+		Thread.sleep(2000);
+		Tools.button("stopusersurebtn", "users", driver);
+		Thread.sleep(2000);
+		String testawaken=Tools.getelement("teststop", "users", driver).getText();
+		Assert.assertTrue(testawaken.contains("停用"));
+		Tools.button("userstop", "users", driver);
+		Thread.sleep(2000);
+		Tools.button("stopusersurebtn", "users", driver);
+		Thread.sleep(1000);
+	}
 
 }
