@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30135" started-at="2017-11-02T08:00:07Z" finished-at="2017-11-02T08:00:37Z">
+  <suite name="IPC" duration-ms="56384" started-at="2017-12-01T07:12:19Z" finished-at="2017-12-01T07:13:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30135" started-at="2017-11-02T08:00:07Z" finished-at="2017-11-02T08:00:37Z">
-      <class name="so.sao.integration.basicData.SystemParameters">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="conect" is-config="true" duration-ms="200" started-at="2017-11-02T16:00:07Z" finished-at="2017-11-02T16:00:07Z">
+    <test name="Test1" duration-ms="56384" started-at="2017-12-01T07:12:19Z" finished-at="2017-12-01T07:13:16Z">
+      <class name="so.sao.integration.basicData.IPC">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="conect" is-config="true" duration-ms="272" started-at="2017-12-01T15:12:19Z" finished-at="2017-12-01T15:12:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="loadDriver" is-config="true" duration-ms="2460" started-at="2017-11-02T16:00:07Z" finished-at="2017-11-02T16:00:10Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="loadDriver" is-config="true" duration-ms="2848" started-at="2017-12-01T15:12:20Z" finished-at="2017-12-01T15:12:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="login" is-config="true" duration-ms="5880" started-at="2017-11-02T16:00:10Z" finished-at="2017-11-02T16:00:15Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="login" is-config="true" duration-ms="6100" started-at="2017-12-01T15:12:23Z" finished-at="2017-12-01T15:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="addSysPat()[pri:1, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="addSysPat" duration-ms="5911" started-at="2017-11-02T16:00:15Z" finished-at="2017-11-02T16:00:21Z">
+        <test-method status="PASS" signature="newIPC()[pri:2, instance:so.sao.integration.basicData.IPC@27efef64]" name="newIPC" duration-ms="14689" started-at="2017-12-01T15:12:29Z" finished-at="2017-12-01T15:12:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addSysPat -->
-        <test-method status="PASS" signature="alterSysPat()[pri:2, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="alterSysPat" duration-ms="3413" started-at="2017-11-02T16:00:21Z" finished-at="2017-11-02T16:00:25Z">
+        </test-method> <!-- newIPC -->
+        <test-method status="PASS" signature="editIPC()[pri:3, instance:so.sao.integration.basicData.IPC@27efef64]" name="editIPC" duration-ms="3666" started-at="2017-12-01T15:12:43Z" finished-at="2017-12-01T15:12:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alterSysPat -->
-        <test-method status="PASS" signature="stopSysPat()[pri:3, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="stopSysPat" duration-ms="4221" started-at="2017-11-02T16:00:25Z" finished-at="2017-11-02T16:00:29Z">
+        </test-method> <!-- editIPC -->
+        <test-method status="PASS" signature="stopandawaken()[pri:4, instance:so.sao.integration.basicData.IPC@27efef64]" name="stopandawaken" duration-ms="12404" started-at="2017-12-01T15:12:47Z" finished-at="2017-12-01T15:12:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopSysPat -->
-        <test-method status="PASS" signature="awakenSysPat()[pri:4, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="awakenSysPat" duration-ms="7296" started-at="2017-11-02T16:00:29Z" finished-at="2017-11-02T16:00:36Z">
+        </test-method> <!-- stopandawaken -->
+        <test-method status="PASS" signature="search()[pri:5, instance:so.sao.integration.basicData.IPC@27efef64]" name="search" duration-ms="8223" started-at="2017-12-01T15:12:59Z" finished-at="2017-12-01T15:13:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- awakenSysPat -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="closebrowser" is-config="true" duration-ms="735" started-at="2017-11-02T16:00:36Z" finished-at="2017-11-02T16:00:37Z">
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="delIPC()[pri:6, instance:so.sao.integration.basicData.IPC@27efef64]" name="delIPC" duration-ms="7213" started-at="2017-12-01T15:13:08Z" finished-at="2017-12-01T15:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delIPC -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="closebrowser" is-config="true" duration-ms="946" started-at="2017-12-01T15:13:15Z" finished-at="2017-12-01T15:13:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.SystemParameters@224edc67]" name="closedb" is-config="true" duration-ms="2" started-at="2017-11-02T16:00:37Z" finished-at="2017-11-02T16:00:37Z">
+        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="closedb" is-config="true" duration-ms="2" started-at="2017-12-01T15:13:16Z" finished-at="2017-12-01T15:13:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.SystemParameters -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- so.sao.integration.basicData.IPC -->
+    </test> <!-- Test1 -->
+  </suite> <!-- IPC -->
 </testng-results>

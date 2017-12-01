@@ -11,6 +11,8 @@ import so.sao.integration.util.Tools;
 public class SystemParameters extends BaseTest {
 	@Test(priority=1)//添加系统参数
 	public void addSysPat() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Tools.button("basedata", "systemparameters", driver);
 		Thread.sleep(2000);
 		Tools.button("systemparameters", "systemparameters", driver);

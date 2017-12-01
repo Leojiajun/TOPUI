@@ -12,6 +12,8 @@ public class Factories extends BaseTest{
 	private String test1=Tools.getRandomString(5);
 	@Test(priority=2)//新建工厂
 	public void addFactory() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		Tools.button("basedata", "factories", driver);
 		Thread.sleep(2000);
 		Tools.button("factorymanage", "factories", driver);
@@ -22,6 +24,10 @@ public class Factories extends BaseTest{
 		Tools.input("factoryaddress", "factories", "上海", driver);
 		Tools.button("factorystyle", "factories", driver);
 		Tools.button("presscompany", "factories", driver);
+		Thread.sleep(2000);
+		Tools.input("contant", "factories", "张三", driver);
+		Tools.input("contantnumber", "factories", "13811112222", driver);
+		Tools.input("comment", "factories", "备注啊", driver);
 		Thread.sleep(2000);
 		Tools.button("addfacsurebtn", "factories", driver);
 		Thread.sleep(1000);
@@ -51,6 +57,8 @@ public class Factories extends BaseTest{
 		Tools.input("factoryaddress", "factories", "北京", driver);
 		Tools.button("factorystyle", "factories", driver);
 		Tools.button("presscompany2", "factories", driver);
+		Tools.input("contant", "factories", "张三修改", driver);
+		Tools.input("contantnumber", "factories", "13811112221", driver);
 		Thread.sleep(2000);
 		Tools.input("comment", "factories", test, driver);
 		Thread.sleep(2000);

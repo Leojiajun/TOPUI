@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,15 +17,19 @@ public class Products extends BaseTest {
 	private String test1="PC"+Tools.getRandomString(6);
 	@Test(priority=2)//新建一个产品
 	public void newProduct() throws SQLException, InterruptedException, IOException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Actions action = new Actions(driver);
 		action.moveToElement(Tools.getelement("basedata", "products", driver)).build().perform();//悬浮在基础数据
 		Thread.sleep(2000);
 		Tools.button("productmanage", "products", driver);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Tools.button("addproduct", "products", driver);
 		Tools.input("productcoding", "products", test1, driver);
 		Tools.input("productname", "products", "PN"+Tools.getRandomString(6), driver);
 		Tools.input("namehelp", "products", Tools.getRandomString(6), driver);
+		Tools.button("brand", "products", driver);
+		Tools.button("choicebrand", "products", driver);
 		Tools.input("saleprice", "products", "10", driver);
 		Tools.input("spec", "products", "10", driver);
 		Tools.button("unitchoice", "products", driver);
@@ -32,7 +37,6 @@ public class Products extends BaseTest {
 		Thread.sleep(2000);
 		Tools.input("material", "products", "原料", driver);
 		Tools.button("classification", "products", driver);
-		Tools.input("saleprice", "products", "10", driver);
 		Tools.button("wine", "products", driver);
 		Thread.sleep(2000);
 		Tools.button("picturemanage", "products", driver);		
@@ -45,7 +49,7 @@ public class Products extends BaseTest {
 		//Tools.JavaScriptClick(Tools.getelement("uploadpicture", "products", driver), driver);
 		Thread.sleep(2000);
 		Runtime.getRuntime().exec("D:/chromeuploadexe/chromeproductpicture.exe");
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		Tools.button("uploadpicturesurebtn", "products", driver);
 		Thread.sleep(2000);
 		driver.switchTo().frame("ueditor_0");//切换到富文本
@@ -69,13 +73,11 @@ public class Products extends BaseTest {
 		Assert.assertEquals(pNum==1, true);
 	}
 	
-	
-	
 	@Test(priority=4)//修改产品
 	public void alterProduct() throws SQLException, InterruptedException{
 		Tools.button("productalter", "products", driver);
 		Thread.sleep(2000);
-		Tools.input("productcoding", "products", "PC"+Tools.getRandomString(6), driver);
+		Tools.input("productname", "products", "PN"+Tools.getRandomString(6), driver);
 		Tools.input("namehelp", "products", Tools.getRandomString(5), driver);
 		Tools.input("saleprice", "products", "5", driver);
 		Tools.input("spec", "products", "5", driver);
@@ -92,6 +94,8 @@ public class Products extends BaseTest {
 	}
 	@Test(priority=5)//禁用和启用产品
 	public void stopAndawakenProduct() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		Tools.button("stopandawaken", "products", driver);
 		Tools.waitForElementPresent("stopandawakensurebtn", "products", driver);
 		Tools.button("stopandawakensurebtn", "products", driver);

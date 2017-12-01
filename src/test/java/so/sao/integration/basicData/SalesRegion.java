@@ -12,15 +12,19 @@ import so.sao.integration.util.Tools;
 public class SalesRegion extends BaseTest{
 	@Test(priority=2)//新建销售区域
 	public void addSalesRegion() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Tools.button("basedata", "salesregion", driver);
 		Thread.sleep(2000);
 		Tools.button("salesmanage", "salesregion", driver);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Tools.button("addsales", "salesregion", driver);
 		Tools.input("salescode", "salesregion", Tools.getRandomString(5), driver);
+		Thread.sleep(2000);
 		Tools.input("salesregionname", "salesregion", "江苏"+Tools.getRandomString(5), driver);
+		Thread.sleep(2000);
 		Tools.button("jiangsu", "salesregion", driver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Tools.button("newsalesurebtn", "salesregion", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("成功"));

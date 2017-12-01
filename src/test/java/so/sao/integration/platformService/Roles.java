@@ -11,6 +11,8 @@ import so.sao.integration.util.Tools;
 public class Roles extends BaseTest{
 	@Test(priority=2)//新建角色
 	public void newRole() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Tools.button("platformservice", "roles", driver);
 		Thread.sleep(2000);
 		Tools.button("rolemanage", "roles", driver);
@@ -18,10 +20,12 @@ public class Roles extends BaseTest{
 		Tools.button("addrole", "roles", driver);
 		Tools.waitForElementPresent("choiceactivity", "roles", driver);
 		Tools.input("rolename", "roles", Tools.getRandomString(5), driver);
+		Thread.sleep(2000);
 		Tools.button("choiceactivity", "roles", driver);
 		Tools.button("pulldown", "roles", driver);
 		Tools.button("choiceCRM", "roles", driver);
 		Tools.waitForElementPresent("addrolesurebtn", "roles", driver);
+		Thread.sleep(2000);
 		Tools.button("addrolesurebtn", "roles", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("创建成功"));
@@ -39,14 +43,16 @@ public class Roles extends BaseTest{
 		Tools.waitForElementPresent("alterrolesurebtn", "roles", driver);
 		Tools.button("alterrolesurebtn", "roles", driver);
 		Tools.waitForElementPresent("addrole", "roles", driver);
+		Thread.sleep(3000);
 		Assert.assertTrue(driver.getPageSource().contains(test));
 	}
 	
 	
 	@Test(priority=4)//删除角色
 	public void delRole() throws SQLException, InterruptedException{
-		Tools.button("delrole", "roles", driver);
 		Thread.sleep(2000);
+		Tools.button("delrole", "roles", driver);
+		Thread.sleep(3000);
 		Tools.button("delrolesurebtn", "roles", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("删除成功"));

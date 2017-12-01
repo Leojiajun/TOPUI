@@ -11,9 +11,12 @@ import so.sao.integration.util.Tools;
 public class Users extends BaseTest{
 	@Test(priority=2)//新建用户
 	public void newUser() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Tools.button("platformservice", "users", driver);
 		Thread.sleep(2000);
 		Tools.button("usermanage", "users", driver);
+		Tools.waitForElementPresent("adduser", "users", driver);
 		Thread.sleep(2000);
 		Tools.button("adduser", "users", driver);
 		Tools.input("loginname", "users", Tools.getRandomString(6)+"@126.com", driver);
@@ -33,6 +36,7 @@ public class Users extends BaseTest{
 		Thread.sleep(1000);
 		Tools.button("adduserchoiceroleone", "users", driver);
 		Tools.waitForElementPresent("addusersurebtn", "users", driver);
+		Thread.sleep(2000);
 		Tools.button("addusersurebtn", "users", driver);
 		Thread.sleep(1000);
 		Assert.assertTrue(driver.getPageSource().contains("保存成功"));
@@ -52,20 +56,21 @@ public class Users extends BaseTest{
 	
 	@Test(priority=4)//重置用户
 	public void resetUser() throws SQLException, InterruptedException{
+		Thread.sleep(2000);
 		Tools.button("userreset", "users", driver);
 		Thread.sleep(2000);
 		Tools.input("resetloginpassword", "users", "ab222222", driver);
 		Tools.input("resetloginpasswordagain", "users", "ab222222", driver);
 		Tools.waitForElementPresent("resetusersurebtn", "users", driver);
 		Tools.button("resetusersurebtn", "users", driver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 	@Test(priority=5)//停用用户
 	public void stopUser() throws SQLException, InterruptedException{
 		Tools.button("userstop", "users", driver);
 		Thread.sleep(2000);
 		Tools.button("stopusersurebtn", "users", driver);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		String teststop=Tools.getelement("teststop", "users", driver).getText();
 		Assert.assertTrue(teststop.contains("启用"));
 	}
@@ -75,11 +80,11 @@ public class Users extends BaseTest{
 		Tools.button("userstop", "users", driver);
 		Thread.sleep(2000);
 		Tools.button("stopusersurebtn", "users", driver);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		String testawaken=Tools.getelement("teststop", "users", driver).getText();
 		Assert.assertTrue(testawaken.contains("停用"));
 		Tools.button("userstop", "users", driver);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Tools.button("stopusersurebtn", "users", driver);
 		Thread.sleep(1000);
 	}

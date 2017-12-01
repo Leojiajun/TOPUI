@@ -13,6 +13,8 @@ import so.sao.integration.util.Tools;
 public class Distributors extends BaseTest{
 	@Test(priority=2)//新建一个经销商
 	public void newLeader() throws SQLException, InterruptedException{
+		driver.navigate().refresh();
+		Thread.sleep(5000);
 		Tools.button("basedata", "distributors", driver);
 		Thread.sleep(2000);
 		Tools.button("leadermanage", "distributors", driver);
