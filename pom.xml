@@ -57,6 +57,7 @@
 							<suiteXmlFile>src/test/resources/suite/company.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/factories.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/ipc.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/suite/brand.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/products.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/distributors.xml</suiteXmlFile>
 							<suiteXmlFile>src/test/resources/suite/salesregion.xml</suiteXmlFile>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Brand]">
+  <test name="Test1(failed)">
     <classes>
-      <class name="so.sao.integration.platformService.Roles">
+      <class name="so.sao.integration.basicData.Brand">
         <methods>
+          <include name="newBrand"/>
           <include name="conect"/>
-          <include name="alterRole"/>
-          <include name="closebrowser"/>
+          <include name="editBrand"/>
+          <include name="search"/>
           <include name="login"/>
-          <include name="newRole"/>
+          <include name="delBrand"/>
           <include name="loadDriver"/>
-          <include name="delRole"/>
-          <include name="closedb"/>
+          <include name="stopandawaken"/>
         </methods>
-      </class> <!-- so.sao.integration.platformService.Roles -->
+      </class> <!-- so.sao.integration.basicData.Brand -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Brand] -->

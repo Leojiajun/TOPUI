@@ -1,53 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="5" failed="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="IPC" duration-ms="56384" started-at="2017-12-01T07:12:19Z" finished-at="2017-12-01T07:13:16Z">
+  <suite name="Brand" duration-ms="5890" started-at="2017-12-04T09:00:00Z" finished-at="2017-12-04T09:00:05Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="56384" started-at="2017-12-01T07:12:19Z" finished-at="2017-12-01T07:13:16Z">
-      <class name="so.sao.integration.basicData.IPC">
-        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="conect" is-config="true" duration-ms="272" started-at="2017-12-01T15:12:19Z" finished-at="2017-12-01T15:12:20Z">
+    <test name="Test1" duration-ms="5890" started-at="2017-12-04T09:00:00Z" finished-at="2017-12-04T09:00:05Z">
+      <class name="so.sao.integration.basicData.Brand">
+        <test-method status="PASS" signature="conect()[pri:0, instance:so.sao.integration.basicData.Brand@27efef64]" name="conect" is-config="true" duration-ms="266" started-at="2017-12-04T17:00:00Z" finished-at="2017-12-04T17:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conect -->
-        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="loadDriver" is-config="true" duration-ms="2848" started-at="2017-12-01T15:12:20Z" finished-at="2017-12-01T15:12:23Z">
+        <test-method status="PASS" signature="loadDriver()[pri:0, instance:so.sao.integration.basicData.Brand@27efef64]" name="loadDriver" is-config="true" duration-ms="2891" started-at="2017-12-04T17:00:00Z" finished-at="2017-12-04T17:00:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDriver -->
-        <test-method status="PASS" signature="login()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="login" is-config="true" duration-ms="6100" started-at="2017-12-01T15:12:23Z" finished-at="2017-12-01T15:12:29Z">
+        <test-method status="FAIL" signature="login()[pri:0, instance:so.sao.integration.basicData.Brand@27efef64]" name="login" is-config="true" duration-ms="0" started-at="2017-12-04T17:00:03Z" finished-at="2017-12-04T17:00:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=56.0.2924.3)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'shty-qc-wujj2', ip: '192.168.22.56', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\jiajun.wu\AppData\Local\Temp\scoped_dir25752_8588}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.3, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 9405b71b7c3cb6f60348409b835f548c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot get automation extension
+from chrome not reachable
+  (Session info: chrome=56.0.2924.3)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'shty-qc-wujj2', ip: '192.168.22.56', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\jiajun.wu\AppData\Local\Temp\scoped_dir25752_8588}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.3, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 9405b71b7c3cb6f60348409b835f548c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
+	at so.sao.integration.common.BaseTest.login(BaseTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newIPC()[pri:2, instance:so.sao.integration.basicData.IPC@27efef64]" name="newIPC" duration-ms="14689" started-at="2017-12-01T15:12:29Z" finished-at="2017-12-01T15:12:43Z">
+        <test-method status="SKIP" signature="newBrand()[pri:2, instance:so.sao.integration.basicData.Brand@27efef64]" name="newBrand" duration-ms="3" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newIPC -->
-        <test-method status="PASS" signature="editIPC()[pri:3, instance:so.sao.integration.basicData.IPC@27efef64]" name="editIPC" duration-ms="3666" started-at="2017-12-01T15:12:43Z" finished-at="2017-12-01T15:12:47Z">
+        </test-method> <!-- newBrand -->
+        <test-method status="SKIP" signature="editBrand()[pri:3, instance:so.sao.integration.basicData.Brand@27efef64]" name="editBrand" duration-ms="3" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editIPC -->
-        <test-method status="PASS" signature="stopandawaken()[pri:4, instance:so.sao.integration.basicData.IPC@27efef64]" name="stopandawaken" duration-ms="12404" started-at="2017-12-01T15:12:47Z" finished-at="2017-12-01T15:12:59Z">
+        </test-method> <!-- editBrand -->
+        <test-method status="SKIP" signature="stopandawaken()[pri:4, instance:so.sao.integration.basicData.Brand@27efef64]" name="stopandawaken" duration-ms="2" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopandawaken -->
-        <test-method status="PASS" signature="search()[pri:5, instance:so.sao.integration.basicData.IPC@27efef64]" name="search" duration-ms="8223" started-at="2017-12-01T15:12:59Z" finished-at="2017-12-01T15:13:08Z">
+        <test-method status="SKIP" signature="search()[pri:5, instance:so.sao.integration.basicData.Brand@27efef64]" name="search" duration-ms="2" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="delIPC()[pri:6, instance:so.sao.integration.basicData.IPC@27efef64]" name="delIPC" duration-ms="7213" started-at="2017-12-01T15:13:08Z" finished-at="2017-12-01T15:13:15Z">
+        <test-method status="SKIP" signature="delBrand()[pri:6, instance:so.sao.integration.basicData.Brand@27efef64]" name="delBrand" duration-ms="1" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delIPC -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="closebrowser" is-config="true" duration-ms="946" started-at="2017-12-01T15:13:15Z" finished-at="2017-12-01T15:13:16Z">
+        </test-method> <!-- delBrand -->
+        <test-method status="SKIP" signature="closebrowser()[pri:0, instance:so.sao.integration.basicData.Brand@27efef64]" name="closebrowser" is-config="true" duration-ms="0" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="closedb()[pri:0, instance:so.sao.integration.basicData.IPC@27efef64]" name="closedb" is-config="true" duration-ms="2" started-at="2017-12-01T15:13:16Z" finished-at="2017-12-01T15:13:16Z">
+        <test-method status="SKIP" signature="closedb()[pri:0, instance:so.sao.integration.basicData.Brand@27efef64]" name="closedb" is-config="true" duration-ms="0" started-at="2017-12-04T17:00:05Z" finished-at="2017-12-04T17:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedb -->
-      </class> <!-- so.sao.integration.basicData.IPC -->
+      </class> <!-- so.sao.integration.basicData.Brand -->
     </test> <!-- Test1 -->
-  </suite> <!-- IPC -->
+  </suite> <!-- Brand -->
 </testng-results>

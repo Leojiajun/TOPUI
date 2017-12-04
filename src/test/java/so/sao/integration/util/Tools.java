@@ -105,7 +105,7 @@ public class Tools {
 			    Class.forName("com.mysql.jdbc.Driver");
 			    // 建立数据库连接
 			    conn = DriverManager.getConnection(
-			        "jdbc:mysql://192.168.10.30:3306/TOPTEST", "root", "123456");
+			        "jdbc:mysql://192.168.6.9:3306/TOPTEST", "root", "123456");
 			    // 判断数据库连接是否成功
 			    if (!conn.isClosed()) {
 			      System.out.println("数据库连接成功");
